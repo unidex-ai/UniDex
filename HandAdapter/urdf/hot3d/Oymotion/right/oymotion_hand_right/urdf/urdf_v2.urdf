@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="urdf_v2">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0282680334155116 -0.00155312878370573 0.0090688183026775"
+        rpy="0 0 0" />
+      <mass
+        value="0.0410424762542632" />
+      <inertia
+        ixx="1.67808110422422E-05"
+        ixy="-1.38161155616436E-06"
+        ixz="2.77639403016102E-07"
+        iyy="1.59956087599769E-05"
+        iyz="-2.84757118052629E-07"
+        izz="2.62608804201258E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v2/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v2/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="ff_proximal_link">
+    <inertial>
+      <origin
+        xyz="-0.015386 -0.0066062 -0.0079647"
+        rpy="0 0 0" />
+      <mass
+        value="0.0018523" />
+      <inertia
+        ixx="8.5863E-08"
+        ixy="-4.71E-09"
+        ixz="-4.397E-08"
+        iyy="1.886E-07"
+        iyz="-2.9657E-09"
+        izz="1.808E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v2/meshes/ff_proximal_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v2/meshes/ff_proximal_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ff_proximal_joint"
+    type="revolute">
+    <origin
+      xyz="-0.03826 -0.011678 -0.023531"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="ff_proximal_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.23"
+      upper="0.34"
+      effort="50"
+      velocity="1" />
+  </joint>
+  <link
+    name="ff_distal_link">
+    <inertial>
+      <origin
+        xyz="-0.0136744559671081 -0.00546355961032156 -0.0194579532929323"
+        rpy="0 0 0" />
+      <mass
+        value="0.00411870576106074" />
+      <inertia
+        ixx="3.84711901595296E-07"
+        ixy="6.16480172234882E-09"
+        ixz="-2.5005841513438E-07"
+        iyy="5.74190965189268E-07"
+        iyz="6.30974065938001E-09"
+        izz="2.65068505295533E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v2/meshes/ff_distal_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.282352941176471 0.0313725490196078 0.815686274509804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v2/meshes/ff_distal_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ff_distal_joint"
+    type="revolute">
+    <origin
+      xyz="-0.033944 -0.0018093 -0.011608"
+      rpy="0 0 0" />
+    <parent
+      link="ff_proximal_link" />
+    <child
+      link="ff_distal_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.23"
+      upper="0.34"
+      effort="50"
+      velocity="1" />
+  </joint>
+  <link
+    name="lf_proximal_link">
+    <inertial>
+      <origin
+        xyz="-0.0146092609512682 -0.0055508873917868 -0.00670762165904373"
+        rpy="0 0 0" />
+      <mass
+        value="0.00164259183850072" />
+      <inertia
+        ixx="7.83650178895857E-08"
+        ixy="4.1832976450397E-09"
+        ixz="-3.3038131625674E-08"
+        iyy="1.37775200510857E-07"
+        iyz="3.38529940940638E-09"
+        izz="1.31770538978944E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v2/meshes/lf_proximal_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v2/meshes/lf_proximal_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lf_proximal_joint"
+    type="revolute">
+    <origin
+      xyz="-0.033769 -0.011577 0.037146"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lf_proximal_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.23"
+      upper="0.34"
+      effort="50"
+      velocity="1" />
+  </joint>
+  <link
+    name="lf_distal_link">
+    <inertial>
+      <origin
+        xyz="-0.00921516331063749 -0.00657933694076938 -0.0137060475387422"
+        rpy="0 0 0" />
+      <mass
+        value="0.00258549281540904" />
+      <inertia
+        ixx="1.24448167729541E-07"
+        ixy="-7.90147373548682E-10"
+        ixz="-5.47338391191158E-08"
+        iyy="1.5333214661181E-07"
+        iyz="4.20352585186048E-10"
+        izz="7.16963433808903E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v2/meshes/lf_distal_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.576470588235294 0.850980392156863 0.945098039215686 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v2/meshes/lf_distal_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lf_distal_joint"
+    type="revolute">
+    <origin
+      xyz="-0.029536 0.0024174 -0.01189"
+      rpy="0 0 0" />
+    <parent
+      link="lf_proximal_link" />
+    <child
+      link="lf_distal_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.23"
+      upper="0.34"
+      effort="50"
+      velocity="1" />
+  </joint>
+  <link
+    name="mf_proximal_link">
+    <inertial>
+      <origin
+        xyz="-0.0177059315083575 -0.0068574882263558 -0.00949570438060691"
+        rpy="0 0 0" />
+      <mass
+        value="0.00222072837890887" />
+      <inertia
+        ixx="1.18469806234159E-07"
+        ixy="-2.169203589617E-09"
+        ixz="-7.66611865960727E-08"
+        iyy="2.82300078965434E-07"
+        iyz="-1.01552906952095E-09"
+        izz="2.55439925655879E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v2/meshes/mf_proximal_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.913725490196078 0.109803921568627 0.0313725490196078 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v2/meshes/mf_proximal_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mf_proximal_joint"
+    type="revolute">
+    <origin
+      xyz="-0.041118 -0.015454 -0.0028912"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="mf_proximal_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.23"
+      upper="0.34"
+      effort="50"
+      velocity="1" />
+  </joint>
+  <link
+    name="mf_distal_link">
+    <inertial>
+      <origin
+        xyz="-0.0143449599107263 -0.0068015916660648 -0.0187410189605281"
+        rpy="0 0 0" />
+      <mass
+        value="0.00411871594900483" />
+      <inertia
+        ixx="3.77681695290248E-07"
+        ixy="-2.6050362803194E-09"
+        ixz="-2.51747092435786E-07"
+        iyy="5.74182941173459E-07"
+        iyz="-3.33591966287697E-09"
+        izz="2.72077516511856E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v2/meshes/mf_distal_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.917647058823529 0.305882352941176 0.274509803921569 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v2/meshes/mf_distal_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mf_distal_joint"
+    type="revolute">
+    <origin
+      xyz="-0.038289 -0.00050707 -0.014673"
+      rpy="0 0 0" />
+    <parent
+      link="mf_proximal_link" />
+    <child
+      link="mf_distal_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.23"
+      upper="0.34"
+      effort="50"
+      velocity="1" />
+  </joint>
+  <link
+    name="rf_proximal_link">
+    <inertial>
+      <origin
+        xyz="-0.0159574731093167 -0.00508699297495175 -0.00788653991870907"
+        rpy="0 0 0" />
+      <mass
+        value="0.00185229291559554" />
+      <inertia
+        ixx="8.87960405276781E-08"
+        ixy="5.65163102187985E-09"
+        ixz="-4.67021204809698E-08"
+        iyy="1.8840957230307E-07"
+        iyz="2.64384772912068E-09"
+        izz="1.78055276074851E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v2/meshes/rf_proximal_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v2/meshes/rf_proximal_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rf_proximal_joint"
+    type="revolute">
+    <origin
+      xyz="-0.037956 -0.014704 0.016541"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rf_proximal_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.23"
+      upper="0.34"
+      effort="50"
+      velocity="1" />
+  </joint>
+  <link
+    name="rf_distal_link">
+    <inertial>
+      <origin
+        xyz="-0.0132013672271961 -0.00525332333018323 -0.0198360245917965"
+        rpy="0 0 0" />
+      <mass
+        value="0.00411813438505178" />
+      <inertia
+        ixx="4.17567964091139E-07"
+        ixy="8.83792091169937E-09"
+        ixz="-2.39623187984756E-07"
+        iyy="5.73527691798747E-07"
+        iyz="1.35350117823584E-08"
+        izz="2.3247215276718E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v2/meshes/rf_distal_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v2/meshes/rf_distal_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rf_distal_joint"
+    type="revolute">
+    <origin
+      xyz="-0.03359 0.0018994 -0.012583"
+      rpy="0 0 0" />
+    <parent
+      link="rf_proximal_link" />
+    <child
+      link="rf_distal_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.23"
+      upper="0.34"
+      effort="50"
+      velocity="1" />
+  </joint>
+  <link
+    name="th_link_1">
+    <inertial>
+      <origin
+        xyz="0.00270659292318193 -0.00468066434180406 -0.00150236387262136"
+        rpy="0 0 0" />
+      <mass
+        value="0.00211540567417261" />
+      <inertia
+        ixx="1.7524535629557E-07"
+        ixy="-5.50208752881828E-08"
+        ixz="-4.43809324813235E-09"
+        iyy="1.42495552210395E-07"
+        iyz="-2.42530529882035E-08"
+        izz="1.70635228042348E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v2/meshes/th_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v2/meshes/th_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="th_joint_1"
+    type="revolute">
+    <origin
+      xyz="0.028856 0.014535 -0.018759"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="th_link_1" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.34"
+      upper="1.571"
+      effort="50"
+      velocity="1" />
+  </joint>
+  <link
+    name="th_link_2">
+    <inertial>
+      <origin
+        xyz="-0.00834633647940502 -0.00790061639194979 -0.0025612163065322"
+        rpy="0 0 0" />
+      <mass
+        value="0.0066634254339578" />
+      <inertia
+        ixx="4.79987278390943E-07"
+        ixy="2.81861563990933E-11"
+        ixz="-4.91467867848404E-07"
+        iyy="2.21316128962266E-06"
+        iyz="-8.06170404221075E-11"
+        izz="1.8860706671632E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v2/meshes/th_link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v2/meshes/th_link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="th_joint_2"
+    type="revolute">
+    <origin
+      xyz="-0.013434 -0.026438 -0.014086"
+      rpy="-1.5678 -0.21839 -0.00065226" />
+    <parent
+      link="th_link_1" />
+    <child
+      link="th_link_2" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0.0"
+      upper="0.34"
+      effort="50"
+      velocity="1" />
+  </joint>
+  <link
+    name="th_link_3">
+    <inertial>
+      <origin
+        xyz="-0.0213045047900868 -0.00350583745128136 0.000499870962888962"
+        rpy="0 0 0" />
+      <mass
+        value="0.00503417004238488" />
+      <inertia
+        ixx="1.99445023591198E-07"
+        ixy="1.59270498707835E-12"
+        ixz="-5.81633739950867E-08"
+        iyy="2.35221266539737E-07"
+        iyz="-1.81601613420279E-12"
+        izz="2.67880566003001E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v2/meshes/th_link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v2/meshes/th_link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="th_joint_3"
+    type="revolute">
+    <origin
+      xyz="-0.028136 -0.0044434 -0.01595"
+      rpy="0 0 0" />
+    <parent
+      link="th_link_2" />
+    <child
+      link="th_link_3" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0.0"
+      upper="0.34"
+      effort="50"
+      velocity="1" />
+  </joint>
+</robot>

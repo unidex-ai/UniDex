@@ -1,0 +1,17 @@
+{
+    "base_joint": "base_to_palm",
+    "tips": [
+        "realtip",
+        "realtip_2",
+        "realtip_3",
+        "realtip_4"
+    ],
+    "poses": [
+        "wrist_link",
+        "realtip",
+        "realtip_2",
+        "realtip_3",
+        "realtip_4"
+    ],
+    "mimic_relations": {}
+}

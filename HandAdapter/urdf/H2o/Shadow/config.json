@@ -1,0 +1,19 @@
+{
+    "base_joint": "world_joint",
+    "tips": [
+        "thtip",
+        "fftip",
+        "mftip",
+        "rftip",
+        "lftip"
+    ],
+    "poses": [
+        "wrist",
+        "thtip",
+        "fftip",
+        "mftip",
+        "rftip",
+        "lftip"
+    ],
+    "mimic_relations": {}
+}

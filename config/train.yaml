@@ -1,0 +1,44 @@
+defaults:
+  - dataset: mixture
+  - model: unidex
+  - _self_
+
+hydra:
+  run:
+    dir: ./UniDex_training/${now:%Y-%m-%d}/${now:%H-%M-%S}
+      
+train:
+  load_checkpoint: null
+  checkpoint_path: ./checkpoints
+  optimizer:
+    _target_: torch.optim.AdamW
+    lr: 1e-4
+    betas: [0.9, 0.95]
+    eps: 1e-8
+    weight_decay: 1e-10
+  scheduler:
+    _target_: src.utils.schedulers.CosineDecaySchedule
+    warmup_steps: 2000
+    decay_steps: 200000
+    decay_lr: 0.1
+    peak_lr: 1.0
+  dataloader:
+    batch_size: 4
+    num_workers: 1
+    val_ratio: 0.05
+  wandb: 
+    project: unihand
+    run_name: pre-train
+  checkpoint:
+    save_top_k: -1
+    save_every_n_epochs: 1
+  trainer:
+    max_epochs: 32
+    devices: [0, 1, 2, 3, 4, 5, 6, 7]
+    strategy: ddp_find_unused_parameters_true
+    precision: 32-true
+    accumulate_grad_batches: 4
+    gradient_clip_val: 1.0
+    check_val_every_n_epoch: 1
+  # Here we use 8 H800s as an example. Please adjust batch_size, accumulate_grad_batches, and devices according to your hardware.
+  # True batch size = batch_size * accumulate_grad_batches * number of devices, which is 4 * 4 * 8 = 128 in our pre-training setup.

@@ -1,0 +1,45 @@
+defaults:
+  - dataset: Real
+  - model: unidex
+  - _self_
+
+hydra:
+  run:
+    dir: ./UniDex_training/${now:%Y-%m-%d}/${now:%H-%M-%S}
+
+train:
+  load_checkpoint: path_to_your_pretrained_model_checkpoint.ckpt
+  checkpoint_path: ./finetune_checkpoints
+  optimizer:
+    _target_: torch.optim.AdamW
+    lr: 2.5e-5
+    betas: [0.9, 0.95]
+    eps: 1e-8
+    weight_decay: 1e-10
+  scheduler:
+    _target_: src.utils.schedulers.CosineDecaySchedule
+    warmup_steps: 1
+    decay_steps: 300
+    decay_lr: 1.0
+    peak_lr: 1.0
+    # here is a fake scheduler since this is finetuning
+  dataloader:
+    batch_size: 4
+    num_workers: 1
+    val_ratio: 0.05
+  wandb: 
+    project: unihand
+    run_name: your_finetune_run_name
+  checkpoint:
+    save_top_k: -1
+    save_every_n_epochs: 10
+  trainer:
+    max_epochs: 50
+    devices: [0, 1]
+    strategy: ddp_find_unused_parameters_true
+    precision: 32-true
+    accumulate_grad_batches: 1
+    gradient_clip_val: 1.0
+    check_val_every_n_epoch: 1
+  # Here we use 2 H800s as an example. Please adjust batch_size, accumulate_grad_batches, and devices according to your hardware.
+  # True batch size = batch_size * accumulate_grad_batches * number of devices, which is 4 * 1 * 2 = 8 in our finetuning setup.

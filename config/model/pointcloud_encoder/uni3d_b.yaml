@@ -1,0 +1,13 @@
+_target_: src.pointcloud_encoder.uni3d.Uni3D
+vision_model_name: eva02_base_patch14_448
+pc_feat_dim: 768
+pretrained_model_path: pretrained/uni3d/model-b.pt
+
+group_size: 64
+num_group: 512
+pc_encoder_dim: 512
+patch_dropout: 0.0
+single_output_token: False
+
+trans2embed: False
+embed_dim: 1024

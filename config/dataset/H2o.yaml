@@ -1,0 +1,26 @@
+defaults:
+  - normalizer: base
+
+_target_: src.dataset.H2o.H2oDataset
+
+data_dir: data/H2o/
+cache_dir: data_preprocess/H2o/
+
+chunk_size: 30
+pointcloud_size: 10000
+state_horizon: 1
+pcd_horizon: 1
+sample_stride: 2 # 30fps -> 15fps
+
+cache_data: true
+use_cached_metadata: true
+
+hands:
+  - Inspire
+  - Leap
+  - Wuji
+  - Ability
+  - Shadow
+  - Oymotion
+  - Xhand
+  - Allegro

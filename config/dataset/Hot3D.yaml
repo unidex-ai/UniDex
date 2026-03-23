@@ -1,0 +1,27 @@
+defaults:
+  - normalizer: base
+
+_target_: src.dataset.Hot3D.Hot3DDataset
+
+data_dir: data/hot3d/
+cache_dir: data_preprocess/Hot3D/
+
+chunk_size: 30
+pointcloud_size: 10000
+state_horizon: 1
+pcd_horizon: 1
+sample_stride: 2 # 10fps -> 5fps
+interpolation_factor: 3 # 5fps -> 15fps
+
+cache_data: true
+use_cached_metadata: true
+
+hands:
+  - Inspire
+  - Leap
+  - Wuji
+  - Ability
+  - Shadow
+  - Oymotion
+  - Xhand
+  - Allegro

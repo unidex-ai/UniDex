@@ -1,0 +1,38 @@
+defaults:
+  - normalizer: base
+
+_target_: src.dataset.Real.RealDataset
+
+data_dir: ./post_training_dataset
+cache_dir: data_preprocess/Real/
+
+# List of data source configurations with individual sample_stride, generated_data_dir, and interpolation_factor settings.
+# The following is an example entry; please modify according to your dataset structure and requirements.
+data_dirs:
+  # Inspire pour coffee
+  - relative_path: 'path_to_your_processed_collected_data.zarr' # Replace with actual zarr path
+    hand_type: 'Inspire' # Choose from available hand types 
+    hand_side: 'Right' # 'Left' or 'Right'
+    action: 'prompt' # Language instruction of the task. A prefix 'Use <hand_type> hands to ' will be automatically added to the prompt during training. E.x. 'lift up the pot and pour into the hopper' -> 'Use Inspire hands to lift up the pot and pour into the hopper.'
+    sample_stride: 3 # 15fps -> 5fps since teleoperation data is slower 
+    interpolation_factor: 1 # No interpolation, can be used to upsample low-fps data
+    generated_data_dir: null  # This zarr has generated DemoGen data. E.x., 'datasets_0916/generated'
+    sequence_num: null # null means use all sequences. Can also specify an integer to limit number of sequences used.
+
+chunk_size: 30
+pointcloud_size: 10000
+state_horizon: 1
+pcd_horizon: 1
+sample_stride: 3 # 15fps -> 5fps
+interpolation_factor: 1
+
+cache_data: true
+use_cached_metadata: false
+
+# Generated data configuration
+use_generated_data: true           # If True: include DemoGen generated data according to generated_data_dir settings in data_dirs
+
+# Available hand types (will be filtered based on data_dirs)
+hands:
+  - Inspire
+  - Wuji

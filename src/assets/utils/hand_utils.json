@@ -1,0 +1,1441 @@
+{
+    "mapped_joint_dim": 32,
+    "joint_dim_in_use": 27,
+    "universal_tips": [
+        "thumb_tip",
+        "index_tip",
+        "middle_tip",
+        "ring_tip",
+        "pinky_tip"
+    ],
+    "universal_links": [
+        "wrist",
+        "thumb_tip",
+        "index_tip",
+        "middle_tip",
+        "ring_tip",
+        "pinky_tip"
+    ],
+    "joint_dimensions": {
+        "Ability": 10,
+        "Allegro": 16,
+        "Inspire": 12,
+        "Leap": 16,
+        "Oymotion": 11,
+        "Shadow": 22,
+        "Wuji": 20,
+        "Xhand": 12
+    },
+    "joint_map": {
+        "Ability": {
+            "thumb_q1": 1,
+            "thumb_q2": 2,
+            "index_q1": 7,
+            "index_q2": 8,
+            "middle_q1": 12,
+            "middle_q2": 13,
+            "ring_q1": 17,
+            "ring_q2": 18,
+            "pinky_q1": 22,
+            "pinky_q2": 23
+        },
+        "Allegro": {
+            "joint_0.0": 5,
+            "joint_1.0": 7,
+            "joint_2.0": 8,
+            "joint_3.0": 9,
+            "joint_4.0": 10,
+            "joint_5.0": 12,
+            "joint_6.0": 13,
+            "joint_7.0": 14,
+            "joint_8.0": 15,
+            "joint_9.0": 17,
+            "joint_10.0": 18,
+            "joint_11.0": 19,
+            "joint_12.0": 1,
+            "joint_13.0": 0,
+            "joint_14.0": 2,
+            "joint_15.0": 3
+        },
+        "Inspire": {
+            "thumb_proximal_yaw_joint": 1,
+            "thumb_proximal_pitch_joint": 2,
+            "thumb_intermediate_joint": 3,
+            "thumb_distal_joint": 4,
+            "index_proximal_joint": 7,
+            "index_intermediate_joint": 8,
+            "middle_proximal_joint": 12,
+            "middle_intermediate_joint": 13,
+            "ring_proximal_joint": 17,
+            "ring_intermediate_joint": 18,
+            "pinky_proximal_joint": 22,
+            "pinky_intermediate_joint": 23
+        },
+        "Leap": {
+            "0": 6,
+            "1": 7,
+            "2": 8,
+            "3": 9,
+            "4": 11,
+            "5": 12,
+            "6": 13,
+            "7": 14,
+            "8": 16,
+            "9": 17,
+            "10": 18,
+            "11": 19,
+            "12": 1,
+            "13": 0,
+            "14": 2,
+            "15": 3
+        },
+        "Oymotion": {
+            "ff_proximal_joint": 7,
+            "ff_distal_joint": 8,
+            "mf_proximal_joint": 12,
+            "mf_distal_joint": 13,
+            "rf_proximal_joint": 17,
+            "rf_distal_joint": 18,
+            "lf_proximal_joint": 22,
+            "lf_distal_joint": 23,
+            "th_joint_1": 1,
+            "th_joint_2": 2,
+            "th_joint_3": 3
+        },
+        "Shadow": {
+            "FFJ4": 6,
+            "FFJ3": 7,
+            "FFJ2": 8,
+            "FFJ1": 9,
+            "MFJ4": 11,
+            "MFJ3": 12,
+            "MFJ2": 13,
+            "MFJ1": 14,
+            "RFJ4": 16,
+            "RFJ3": 17,
+            "RFJ2": 18,
+            "RFJ1": 19,
+            "LFJ5": 25,
+            "LFJ4": 21,
+            "LFJ3": 22,
+            "LFJ2": 23,
+            "LFJ1": 24,
+            "THJ5": 0,
+            "THJ4": 1,
+            "THJ3": 26,
+            "THJ2": 3,
+            "THJ1": 4
+        },
+        "Wuji": {
+            "F1J1": 1,
+            "F1J2": 2,
+            "F1J3": 3,
+            "F1J4": 4,
+            "F2J1": 7,
+            "F2J2": 6,
+            "F2J3": 8,
+            "F2J4": 9,
+            "F3J1": 12,
+            "F3J2": 11,
+            "F3J3": 13,
+            "F3J4": 14,
+            "F4J1": 17,
+            "F4J2": 16,
+            "F4J3": 18,
+            "F4J4": 19,
+            "F5J1": 22,
+            "F5J2": 21,
+            "F5J3": 23,
+            "F5J4": 24
+        },
+        "Xhand": {
+            "thumb_bend_joint": 1,
+            "thumb_rota_joint1": 2,
+            "thumb_rota_joint2": 3,
+            "index_bend_joint": 6,
+            "index_joint1": 7,
+            "index_joint2": 8,
+            "mid_joint1": 12,
+            "mid_joint2": 13,
+            "ring_joint1": 17,
+            "ring_joint2": 18,
+            "pinky_joint1": 22,
+            "pinky_joint2": 23
+        }
+    },
+    "retarget_joint_map_scale": {
+        "Ability": {
+            "left": {
+                "thumb_q1": -1.0,
+                "thumb_q2": 1.0,
+                "index_q1": 1.0,
+                "index_q2": 1.0,
+                "middle_q1": 1.0,
+                "middle_q2": 1.0,
+                "ring_q1": 1.0,
+                "ring_q2": 1.0,
+                "pinky_q1": 1.0,
+                "pinky_q2": 1.0
+            },
+            "right": {
+                "thumb_q1": -1.0,
+                "thumb_q2": 1.0,
+                "index_q1": 1.0,
+                "index_q2": 1.0,
+                "middle_q1": 1.0,
+                "middle_q2": 1.0,
+                "ring_q1": 1.0,
+                "ring_q2": 1.0,
+                "pinky_q1": 1.0,
+                "pinky_q2": 1.0
+            }
+        },
+        "Allegro": {
+            "left": {
+                "joint_0.0": -1.0,
+                "joint_1.0": 1.0,
+                "joint_2.0": 1.0,
+                "joint_3.0": 1.0,
+                "joint_4.0": -1.0,
+                "joint_5.0": 1.0,
+                "joint_6.0": 1.0,
+                "joint_7.0": 1.0,
+                "joint_8.0": -1.0,
+                "joint_9.0": 1.0,
+                "joint_10.0": 1.0,
+                "joint_11.0": 1.0,
+                "joint_12.0": 1.0,
+                "joint_13.0": 1.0,
+                "joint_14.0": 1.0,
+                "joint_15.0": 1.0
+            },
+            "right": {
+                "joint_0.0": 1.0,
+                "joint_1.0": 1.0,
+                "joint_2.0": 1.0,
+                "joint_3.0": 1.0,
+                "joint_4.0": 1.0,
+                "joint_5.0": 1.0,
+                "joint_6.0": 1.0,
+                "joint_7.0": 1.0,
+                "joint_8.0": 1.0,
+                "joint_9.0": 1.0,
+                "joint_10.0": 1.0,
+                "joint_11.0": 1.0,
+                "joint_12.0": 1.0,
+                "joint_13.0": 1.0,
+                "joint_14.0": 1.0,
+                "joint_15.0": 1.0
+            }
+        },
+        "Inspire": {
+            "left": {
+                "thumb_proximal_yaw_joint": 1.0,
+                "thumb_proximal_pitch_joint": 1.0,
+                "thumb_intermediate_joint": 1.0,
+                "thumb_distal_joint": 1.0,
+                "index_proximal_joint": 1.0,
+                "index_intermediate_joint": 1.0,
+                "middle_proximal_joint": 1.0,
+                "middle_intermediate_joint": 1.0,
+                "ring_proximal_joint": 1.0,
+                "ring_intermediate_joint": 1.0,
+                "pinky_proximal_joint": 1.0,
+                "pinky_intermediate_joint": 1.0
+            },
+            "right": {
+                "thumb_proximal_yaw_joint": 1.0,
+                "thumb_proximal_pitch_joint": 1.0,
+                "thumb_intermediate_joint": 1.0,
+                "thumb_distal_joint": 1.0,
+                "index_proximal_joint": 1.0,
+                "index_intermediate_joint": 1.0,
+                "middle_proximal_joint": 1.0,
+                "middle_intermediate_joint": 1.0,
+                "ring_proximal_joint": 1.0,
+                "ring_intermediate_joint": 1.0,
+                "pinky_proximal_joint": 1.0,
+                "pinky_intermediate_joint": 1.0
+            }
+        },
+        "Leap": {
+            "left": {
+                "0": 1.0,
+                "1": 1.0,
+                "2": 1.0,
+                "3": 1.0,
+                "4": 1.0,
+                "5": 1.0,
+                "6": 1.0,
+                "7": 1.0,
+                "8": 1.0,
+                "9": 1.0,
+                "10": 1.0,
+                "11": 1.0,
+                "12": -1.0,
+                "13": 1.0,
+                "14": 1.0,
+                "15": 1.0
+            },
+            "right": {
+                "0": -1.0,
+                "1": 1.0,
+                "2": 1.0,
+                "3": 1.0,
+                "4": -1.0,
+                "5": 1.0,
+                "6": 1.0,
+                "7": 1.0,
+                "8": -1.0,
+                "9": 1.0,
+                "10": 1.0,
+                "11": 1.0,
+                "12": 1.0,
+                "13": 1.0,
+                "14": 1.0,
+                "15": 1.0
+            }
+        },
+        "Oymotion": {
+            "left": {
+                "ff_proximal_joint": -1.0,
+                "ff_distal_joint": -1.0,
+                "mf_proximal_joint": -1.0,
+                "mf_distal_joint": -1.0,
+                "rf_proximal_joint": -1.0,
+                "rf_distal_joint": -1.0,
+                "lf_proximal_joint": -1.0,
+                "lf_distal_joint": -1.0,
+                "th_joint_1": 1.0,
+                "th_joint_2": 1.0,
+                "th_joint_3": 1.0
+            },
+            "right": {
+                "ff_proximal_joint": -1.0,
+                "ff_distal_joint": -1.0,
+                "mf_proximal_joint": -1.0,
+                "mf_distal_joint": -1.0,
+                "rf_proximal_joint": -1.0,
+                "rf_distal_joint": -1.0,
+                "lf_proximal_joint": -1.0,
+                "lf_distal_joint": -1.0,
+                "th_joint_1": 1.0,
+                "th_joint_2": 1.0,
+                "th_joint_3": 1.0
+            }
+        },
+        "Shadow": {
+            "left": {
+                "FFJ4": -1.0,
+                "FFJ3": 1.0,
+                "FFJ2": 1.0,
+                "FFJ1": 1.0,
+                "MFJ4": -1.0,
+                "MFJ3": 1.0,
+                "MFJ2": 1.0,
+                "MFJ1": 1.0,
+                "RFJ4": 1.0,
+                "RFJ3": 1.0,
+                "RFJ2": 1.0,
+                "RFJ1": 1.0,
+                "LFJ5": 1.0,
+                "LFJ4": 1.0,
+                "LFJ3": 1.0,
+                "LFJ2": 1.0,
+                "LFJ1": 1.0,
+                "THJ5": -1.0,
+                "THJ4": 1.0,
+                "THJ3": -1.0,
+                "THJ2": 1.0,
+                "THJ1": 1.0
+            },
+            "right": {
+                "FFJ4": -1.0,
+                "FFJ3": 1.0,
+                "FFJ2": 1.0,
+                "FFJ1": 1.0,
+                "MFJ4": -1.0,
+                "MFJ3": 1.0,
+                "MFJ2": 1.0,
+                "MFJ1": 1.0,
+                "RFJ4": 1.0,
+                "RFJ3": 1.0,
+                "RFJ2": 1.0,
+                "RFJ1": 1.0,
+                "LFJ5": 1.0,
+                "LFJ4": 1.0,
+                "LFJ3": 1.0,
+                "LFJ2": 1.0,
+                "LFJ1": 1.0,
+                "THJ5": -1.0,
+                "THJ4": 1.0,
+                "THJ3": -1.0,
+                "THJ2": 1.0,
+                "THJ1": 1.0
+            }
+        },
+        "Wuji": {
+            "left": {
+                "F1J1": 1.0,
+                "F1J2": 1.0,
+                "F1J3": 1.0,
+                "F1J4": 1.0,
+                "F2J1": -1.0,
+                "F2J2": 1.0,
+                "F2J3": 1.0,
+                "F2J4": 1.0,
+                "F3J1": -1.0,
+                "F3J2": 1.0,
+                "F3J3": 1.0,
+                "F3J4": 1.0,
+                "F4J1": -1.0,
+                "F4J2": 1.0,
+                "F4J3": 1.0,
+                "F4J4": 1.0,
+                "F5J1": -1.0,
+                "F5J2": 1.0,
+                "F5J3": 1.0,
+                "F5J4": 1.0
+            },
+            "right": {
+                "F1J1": 1.0,
+                "F1J2": 1.0,
+                "F1J3": 1.0,
+                "F1J4": 1.0,
+                "F2J1": -1.0,
+                "F2J2": 1.0,
+                "F2J3": 1.0,
+                "F2J4": 1.0,
+                "F3J1": -1.0,
+                "F3J2": 1.0,
+                "F3J3": 1.0,
+                "F3J4": 1.0,
+                "F4J1": -1.0,
+                "F4J2": 1.0,
+                "F4J3": 1.0,
+                "F4J4": 1.0,
+                "F5J1": -1.0,
+                "F5J2": 1.0,
+                "F5J3": 1.0,
+                "F5J4": 1.0
+            }
+        },
+        "Xhand": {
+            "left": {
+                "thumb_bend_joint": 1.0,
+                "thumb_rota_joint1": 1.0,
+                "thumb_rota_joint2": 1.0,
+                "index_bend_joint": -1.0,
+                "index_joint1": 1.0,
+                "index_joint2": 1.0,
+                "mid_joint1": 1.0,
+                "mid_joint2": 1.0,
+                "ring_joint1": 1.0,
+                "ring_joint2": 1.0,
+                "pinky_joint1": 1.0,
+                "pinky_joint2": 1.0
+            },
+            "right": {
+                "thumb_bend_joint": 1.0,
+                "thumb_rota_joint1": 1.0,
+                "thumb_rota_joint2": 1.0,
+                "index_bend_joint": -1.0,
+                "index_joint1": 1.0,
+                "index_joint2": 1.0,
+                "mid_joint1": 1.0,
+                "mid_joint2": 1.0,
+                "ring_joint1": 1.0,
+                "ring_joint2": 1.0,
+                "pinky_joint1": 1.0,
+                "pinky_joint2": 1.0
+            }
+        }
+    },
+    "retarget_joint_map_offset": {
+        "Ability": {
+            "left": {
+                "thumb_q1": 0.0,
+                "thumb_q2": 0.0,
+                "index_q1": 0.0,
+                "index_q2": -0.72349796,
+                "middle_q1": 0.0,
+                "middle_q2": -0.72349796,
+                "ring_q1": 0.0,
+                "ring_q2": -0.72349796,
+                "pinky_q1": 0.0,
+                "pinky_q2": -0.72349796
+            },
+            "right": {
+                "thumb_q1": 0.0,
+                "thumb_q2": 0.0,
+                "index_q1": 0.0,
+                "index_q2": -0.72349796,
+                "middle_q1": 0.0,
+                "middle_q2": -0.72349796,
+                "ring_q1": 0.0,
+                "ring_q2": -0.72349796,
+                "pinky_q1": 0.0,
+                "pinky_q2": -0.72349796
+            }
+        },
+        "Allegro": {
+            "left": {
+                "joint_0.0": 0.0,
+                "joint_1.0": 0.0,
+                "joint_2.0": 0.0,
+                "joint_3.0": 0.0,
+                "joint_4.0": 0.0,
+                "joint_5.0": 0.0,
+                "joint_6.0": 0.0,
+                "joint_7.0": 0.0,
+                "joint_8.0": 0.0,
+                "joint_9.0": 0.0,
+                "joint_10.0": 0.0,
+                "joint_11.0": 0.0,
+                "joint_12.0": 0.0,
+                "joint_13.0": 0.0,
+                "joint_14.0": 0.0,
+                "joint_15.0": 0.0
+            },
+            "right": {
+                "joint_0.0": 0.0,
+                "joint_1.0": 0.0,
+                "joint_2.0": 0.0,
+                "joint_3.0": 0.0,
+                "joint_4.0": 0.0,
+                "joint_5.0": 0.0,
+                "joint_6.0": 0.0,
+                "joint_7.0": 0.0,
+                "joint_8.0": 0.0,
+                "joint_9.0": 0.0,
+                "joint_10.0": 0.0,
+                "joint_11.0": 0.0,
+                "joint_12.0": 0.0,
+                "joint_13.0": 0.0,
+                "joint_14.0": 0.0,
+                "joint_15.0": 0.0
+            }
+        },
+        "Inspire": {
+            "left": {
+                "thumb_proximal_yaw_joint": 0.0,
+                "thumb_proximal_pitch_joint": 0.0,
+                "thumb_intermediate_joint": 0.0,
+                "thumb_distal_joint": 0.0,
+                "index_proximal_joint": 0.0,
+                "index_intermediate_joint": -0.04545,
+                "middle_proximal_joint": 0.0,
+                "middle_intermediate_joint": -0.04545,
+                "ring_proximal_joint": 0.0,
+                "ring_intermediate_joint": -0.04545,
+                "pinky_proximal_joint": 0.0,
+                "pinky_intermediate_joint": -0.04545
+            },
+            "right": {
+                "thumb_proximal_yaw_joint": 0.0,
+                "thumb_proximal_pitch_joint": 0.0,
+                "thumb_intermediate_joint": 0.0,
+                "thumb_distal_joint": 0.0,
+                "index_proximal_joint": 0.0,
+                "index_intermediate_joint": -0.04545,
+                "middle_proximal_joint": 0.0,
+                "middle_intermediate_joint": -0.04545,
+                "ring_proximal_joint": 0.0,
+                "ring_intermediate_joint": -0.04545,
+                "pinky_proximal_joint": 0.0,
+                "pinky_intermediate_joint": -0.04545
+            }
+        },
+        "Leap": {
+            "left": {
+                "0": 0.0,
+                "1": 0.0,
+                "2": 0.0,
+                "3": 0.0,
+                "4": 0.0,
+                "5": 0.0,
+                "6": 0.0,
+                "7": 0.0,
+                "8": 0.0,
+                "9": 0.0,
+                "10": 0.0,
+                "11": 0.0,
+                "12": 1.74,
+                "13": 0.0,
+                "14": 0.0,
+                "15": 0.0
+            },
+            "right": {
+                "0": 0.0,
+                "1": 0.0,
+                "2": 0.0,
+                "3": 0.0,
+                "4": 0.0,
+                "5": 0.0,
+                "6": 0.0,
+                "7": 0.0,
+                "8": 0.0,
+                "9": 0.0,
+                "10": 0.0,
+                "11": 0.0,
+                "12": 0.0,
+                "13": 0.0,
+                "14": 0.0,
+                "15": 0.0
+            }
+        },
+        "Oymotion": {
+            "left": {
+                "ff_proximal_joint": 0.34,
+                "ff_distal_joint": 0.34,
+                "mf_proximal_joint": 0.34,
+                "mf_distal_joint": 0.34,
+                "rf_proximal_joint": 0.34,
+                "rf_distal_joint": 0.34,
+                "lf_proximal_joint": 0.34,
+                "lf_distal_joint": 0.34,
+                "th_joint_1": 0.0,
+                "th_joint_2": 0.0,
+                "th_joint_3": 0.0
+            },
+            "right": {
+                "ff_proximal_joint": 0.34,
+                "ff_distal_joint": 0.34,
+                "mf_proximal_joint": 0.34,
+                "mf_distal_joint": 0.34,
+                "rf_proximal_joint": 0.34,
+                "rf_distal_joint": 0.34,
+                "lf_proximal_joint": 0.34,
+                "lf_distal_joint": 0.34,
+                "th_joint_1": 0.0,
+                "th_joint_2": 0.0,
+                "th_joint_3": 0.0
+            }
+        },
+        "Shadow": {
+            "left": {
+                "FFJ4": 0.0,
+                "FFJ3": 0.0,
+                "FFJ2": 0.0,
+                "FFJ1": 0.0,
+                "MFJ4": 0.0,
+                "MFJ3": 0.0,
+                "MFJ2": 0.0,
+                "MFJ1": 0.0,
+                "RFJ4": 0.0,
+                "RFJ3": 0.0,
+                "RFJ2": 0.0,
+                "RFJ1": 0.0,
+                "LFJ5": 0.0,
+                "LFJ4": 0.0,
+                "LFJ3": 0.0,
+                "LFJ2": 0.0,
+                "LFJ1": 0.0,
+                "THJ5": 0.52,
+                "THJ4": 0.0,
+                "THJ3": 0.0,
+                "THJ2": 0.0,
+                "THJ1": 0.0
+            },
+            "right": {
+                "FFJ4": 0.0,
+                "FFJ3": 0.0,
+                "FFJ2": 0.0,
+                "FFJ1": 0.0,
+                "MFJ4": 0.0,
+                "MFJ3": 0.0,
+                "MFJ2": 0.0,
+                "MFJ1": 0.0,
+                "RFJ4": 0.0,
+                "RFJ3": 0.0,
+                "RFJ2": 0.0,
+                "RFJ1": 0.0,
+                "LFJ5": 0.0,
+                "LFJ4": 0.0,
+                "LFJ3": 0.0,
+                "LFJ2": 0.0,
+                "LFJ1": 0.0,
+                "THJ5": 0.52,
+                "THJ4": 0.0,
+                "THJ3": 0.0,
+                "THJ2": 0.0,
+                "THJ1": 0.0
+            }
+        },
+        "Wuji": {
+            "left": {
+                "F1J1": 0.0,
+                "F1J2": 0.0,
+                "F1J3": 0.0,
+                "F1J4": 0.0,
+                "F2J1": 0.0,
+                "F2J2": 0.0,
+                "F2J3": 0.0,
+                "F2J4": 0.0,
+                "F3J1": 0.0,
+                "F3J2": 0.0,
+                "F3J3": 0.0,
+                "F3J4": 0.0,
+                "F4J1": 0.0,
+                "F4J2": 0.0,
+                "F4J3": 0.0,
+                "F4J4": 0.0,
+                "F5J1": 0.0,
+                "F5J2": 0.0,
+                "F5J3": 0.0,
+                "F5J4": 0.0
+            },
+            "right": {
+                "F1J1": 0.0,
+                "F1J2": 0.0,
+                "F1J3": 0.0,
+                "F1J4": 0.0,
+                "F2J1": 0.0,
+                "F2J2": 0.0,
+                "F2J3": 0.0,
+                "F2J4": 0.0,
+                "F3J1": 0.0,
+                "F3J2": 0.0,
+                "F3J3": 0.0,
+                "F3J4": 0.0,
+                "F4J1": 0.0,
+                "F4J2": 0.0,
+                "F4J3": 0.0,
+                "F4J4": 0.0,
+                "F5J1": 0.0,
+                "F5J2": 0.0,
+                "F5J3": 0.0,
+                "F5J4": 0.0
+            }
+        },
+        "Xhand": {
+            "left": {
+                "thumb_bend_joint": 0.0,
+                "thumb_rota_joint1": 0.0,
+                "thumb_rota_joint2": 0.0,
+                "index_bend_joint": 0.0,
+                "index_joint1": 0.0,
+                "index_joint2": 0.0,
+                "mid_joint1": 0.0,
+                "mid_joint2": 0.0,
+                "ring_joint1": 0.0,
+                "ring_joint2": 0.0,
+                "pinky_joint1": 0.0,
+                "pinky_joint2": 0.0
+            },
+            "right": {
+                "thumb_bend_joint": 0.0,
+                "thumb_rota_joint1": 0.0,
+                "thumb_rota_joint2": 0.0,
+                "index_bend_joint": 0.0,
+                "index_joint1": 0.0,
+                "index_joint2": 0.0,
+                "mid_joint1": 0.0,
+                "mid_joint2": 0.0,
+                "ring_joint1": 0.0,
+                "ring_joint2": 0.0,
+                "pinky_joint1": 0.0,
+                "pinky_joint2": 0.0
+            }
+        }
+    },
+    "hand_tip_to_universal": {
+        "Ability": {
+            "base": "wrist",
+            "thumb_tip": "thumb_tip",
+            "index_tip": "index_tip",
+            "middle_tip": "middle_tip",
+            "ring_tip": "ring_tip",
+            "pinky_tip": "pinky_tip"
+        },
+        "Allegro": {
+            "wrist_link": "wrist",
+            "link_15.0_tip": "thumb_tip",
+            "link_11.0_tip": "index_tip",
+            "link_7.0_tip": "middle_tip",
+            "link_3.0_tip": "ring_tip"
+        },
+        "Inspire": {
+            "hand_base_link": "wrist",
+            "thumb_tip": "thumb_tip",
+            "index_tip": "index_tip",
+            "middle_tip": "middle_tip",
+            "ring_tip": "ring_tip",
+            "pinky_tip": "pinky_tip"
+        },
+        "Leap": {
+            "wrist_link": "wrist",
+            "realtip": "thumb_tip",
+            "realtip_2": "index_tip",
+            "realtip_3": "middle_tip",
+            "realtip_4": "ring_tip"
+        },
+        "Oymotion": {
+            "wrist_link": "wrist",
+            "thumb_tip": "thumb_tip",
+            "ff_tip": "index_tip",
+            "mf_tip": "middle_tip",
+            "lf_tip": "ring_tip",
+            "rf_tip": "pinky_tip"
+        },
+        "Shadow": {
+            "wrist": "wrist",
+            "thtip": "thumb_tip",
+            "fftip": "index_tip",
+            "mftip": "middle_tip",
+            "rftip": "ring_tip",
+            "lftip": "pinky_tip"
+        },
+        "Wuji": {
+            "base_link": "wrist",
+            "fingertip_thumb": "thumb_tip",
+            "fingertip_index": "index_tip",
+            "fingertip_middle": "middle_tip",
+            "fingertip_ring": "ring_tip",
+            "fingertip_pinky": "pinky_tip"
+        },
+        "Xhand": {
+            "hand_link": "wrist",
+            "thumb_rota_tip": "thumb_tip",
+            "index_rota_tip": "index_tip",
+            "mid_tip": "middle_tip",
+            "ring_tip": "ring_tip",
+            "pinky_tip": "pinky_tip"
+        }
+    },
+    "tips": {
+        "Ability": [
+            "base",
+            "thumb_tip",
+            "index_tip",
+            "middle_tip",
+            "ring_tip",
+            "pinky_tip"
+        ],
+        "Allegro": [
+            "wrist_link",
+            "link_15.0_tip",
+            "link_11.0_tip",
+            "link_7.0_tip",
+            "link_3.0_tip"
+        ],
+        "Inspire": [
+            "hand_base_link",
+            "thumb_tip",
+            "index_tip",
+            "middle_tip",
+            "ring_tip",
+            "pinky_tip"
+        ],
+        "Leap": [
+            "wrist_link",
+            "realtip",
+            "realtip_2",
+            "realtip_3",
+            "realtip_4"
+        ],
+        "Oymotion": [
+            "wrist_link",
+            "thumb_tip",
+            "ff_tip",
+            "mf_tip",
+            "lf_tip",
+            "rf_tip"
+        ],
+        "Shadow": [
+            "wrist",
+            "thtip",
+            "fftip",
+            "mftip",
+            "rftip",
+            "lftip"
+        ],
+        "Wuji": [
+            "base_link",
+            "fingertip_thumb",
+            "fingertip_index",
+            "fingertip_middle",
+            "fingertip_ring",
+            "fingertip_pinky"
+        ],
+        "Xhand": [
+            "hand_link",
+            "thumb_rota_tip",
+            "index_rota_tip",
+            "mid_tip",
+            "ring_tip",
+            "pinky_tip"
+        ]
+    },
+    "joints": {
+        "Ability": [
+            "thumb_q1",
+            "thumb_q2",
+            "index_q1",
+            "index_q2",
+            "middle_q1",
+            "middle_q2",
+            "ring_q1",
+            "ring_q2",
+            "pinky_q1",
+            "pinky_q2"
+        ],
+        "Allegro": [
+            "joint_0.0",
+            "joint_1.0",
+            "joint_2.0",
+            "joint_3.0",
+            "joint_4.0",
+            "joint_5.0",
+            "joint_6.0",
+            "joint_7.0",
+            "joint_8.0",
+            "joint_9.0",
+            "joint_10.0",
+            "joint_11.0",
+            "joint_12.0",
+            "joint_13.0",
+            "joint_14.0",
+            "joint_15.0"
+        ],
+        "Inspire": [
+            "thumb_proximal_yaw_joint",
+            "thumb_proximal_pitch_joint",
+            "thumb_intermediate_joint",
+            "thumb_distal_joint",
+            "index_proximal_joint",
+            "index_intermediate_joint",
+            "middle_proximal_joint",
+            "middle_intermediate_joint",
+            "ring_proximal_joint",
+            "ring_intermediate_joint",
+            "pinky_proximal_joint",
+            "pinky_intermediate_joint"
+        ],
+        "Leap": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"
+        ],
+        "Oymotion": [
+            "ff_proximal_joint",
+            "ff_distal_joint",
+            "mf_proximal_joint",
+            "mf_distal_joint",
+            "rf_proximal_joint",
+            "rf_distal_joint",
+            "lf_proximal_joint",
+            "lf_distal_joint",
+            "th_joint_1",
+            "th_joint_2",
+            "th_joint_3"
+        ],
+        "Shadow": [
+            "FFJ4",
+            "FFJ3",
+            "FFJ2",
+            "FFJ1",
+            "MFJ4",
+            "MFJ3",
+            "MFJ2",
+            "MFJ1",
+            "RFJ4",
+            "RFJ3",
+            "RFJ2",
+            "RFJ1",
+            "LFJ5",
+            "LFJ4",
+            "LFJ3",
+            "LFJ2",
+            "LFJ1",
+            "THJ5",
+            "THJ4",
+            "THJ3",
+            "THJ2",
+            "THJ1"
+        ],
+        "Wuji": [
+            "F1J1",
+            "F1J2",
+            "F1J3",
+            "F1J4",
+            "F2J1",
+            "F2J2",
+            "F2J3",
+            "F2J4",
+            "F3J1",
+            "F3J2",
+            "F3J3",
+            "F3J4",
+            "F4J1",
+            "F4J2",
+            "F4J3",
+            "F4J4",
+            "F5J1",
+            "F5J2",
+            "F5J3",
+            "F5J4"
+        ],
+        "Xhand": [
+            "thumb_bend_joint",
+            "thumb_rota_joint1",
+            "thumb_rota_joint2",
+            "index_bend_joint",
+            "index_joint1",
+            "index_joint2",
+            "mid_joint1",
+            "mid_joint2",
+            "ring_joint1",
+            "ring_joint2",
+            "pinky_joint1",
+            "pinky_joint2"
+        ]
+    },
+    "hand_transforms": {
+        "Ability": {
+            "left": [
+                [
+                    -0.0,
+                    -1.0,
+                    -0.0,
+                    0.0
+                ],
+                [
+                    1.0,
+                    -0.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            ],
+            "right": [
+                [
+                    0.0,
+                    -1.0,
+                    -0.0,
+                    0.0
+                ],
+                [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            ]
+        },
+        "Allegro": {
+            "left": [
+                [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            ],
+            "right": [
+                [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            ]
+        },
+        "Inspire": {
+            "left": [
+                [
+                    -1.0,
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                [
+                    -0.0,
+                    -0.0,
+                    -1.0,
+                    0.0
+                ],
+                [
+                    -0.0,
+                    -1.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            ],
+            "right": [
+                [
+                    -1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    -0.0,
+                    -0.0,
+                    -1.0,
+                    0.0
+                ],
+                [
+                    -0.0,
+                    -1.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            ]
+        },
+        "Leap": {
+            "left": [
+                [
+                    -0.0,
+                    0.0,
+                    1.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    -1.0,
+                    -0.0,
+                    -0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            ],
+            "right": [
+                [
+                    -0.0,
+                    0.0,
+                    1.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    -1.0,
+                    -0.0,
+                    -0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            ]
+        },
+        "Oymotion": {
+            "left": [
+                [
+                    0.0,
+                    -0.0,
+                    -1.0,
+                    0.0
+                ],
+                [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    -0.0,
+                    -1.0,
+                    -0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            ],
+            "right": [
+                [
+                    0.0,
+                    -0.0,
+                    -1.0,
+                    0.0
+                ],
+                [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    -0.0,
+                    -1.0,
+                    -0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            ]
+        },
+        "Shadow": {
+            "left": [
+                [
+                    -0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    -1.0,
+                    -0.0,
+                    -0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            ],
+            "right": [
+                [
+                    -0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    -1.0,
+                    -0.0,
+                    -0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            ]
+        },
+        "Wuji": {
+            "left": [
+                [
+                    -0.0,
+                    0.0,
+                    1.0,
+                    0.0
+                ],
+                [
+                    1.0,
+                    -0.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            ],
+            "right": [
+                [
+                    -0.0,
+                    -0.0,
+                    -1.0,
+                    0.0
+                ],
+                [
+                    -1.0,
+                    -0.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    -0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            ]
+        },
+        "Xhand": {
+            "left": [
+                [
+                    -0.0,
+                    -1.0,
+                    -0.0,
+                    0.0
+                ],
+                [
+                    -1.0,
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            ],
+            "right": [
+                [
+                    -0.0,
+                    1.0,
+                    -0.0,
+                    0.0
+                ],
+                [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    -0.0,
+                    -1.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            ]
+        }
+    }
+}

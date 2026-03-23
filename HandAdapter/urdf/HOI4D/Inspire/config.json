@@ -1,0 +1,26 @@
+{
+    "base_joint": "base_joint",
+    "tips": [
+        "thumb_tip",
+        "index_tip",
+        "middle_tip",
+        "ring_tip",
+        "pinky_tip"
+    ],
+    "poses": [
+        "hand_base_link",
+        "thumb_tip",
+        "index_tip",
+        "middle_tip",
+        "ring_tip",
+        "pinky_tip"
+    ],
+    "mimic_relations": {
+        "thumb_intermediate_joint": ["thumb_proximal_pitch_joint", 1.334, 0],
+        "thumb_distal_joint": ["thumb_proximal_pitch_joint", 0.667, 0],
+        "index_intermediate_joint": ["index_proximal_joint", 1.06399, -0.04545],
+        "middle_intermediate_joint": ["middle_proximal_joint", 1.06399, -0.04545],
+        "ring_intermediate_joint": ["ring_proximal_joint", 1.06399, -0.04545],
+        "pinky_intermediate_joint": ["pinky_proximal_joint", 1.06399, -0.04545]
+    }
+}

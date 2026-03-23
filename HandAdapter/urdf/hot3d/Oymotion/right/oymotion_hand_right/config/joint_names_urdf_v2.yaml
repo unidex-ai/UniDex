@@ -1,0 +1,1 @@
+controller_joint_names: ['', 'ff_proximal_joint', 'ff_distal_joint', 'lf_proximal_joint', 'lf_distal_joint', 'mf_proximal_joint', 'mf_distal_joint', 'rf_proximal_joint', 'rf_distal_joint', 'th_joint_1', 'th_joint_2', 'th_joint_3', ]

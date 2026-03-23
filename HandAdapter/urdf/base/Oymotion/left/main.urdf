@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="oymotion_hand_left">
+  <link name="base"/>
+  <joint name="base_joint" type="fixed">
+    <origin rpy="3.14159 1.57079 1.57079" xyz="0.01 0 0.075 "/>
+    <parent link="base"/>
+    <child link="base_link"/>
+  </joint>
+
+  <link name="wrist_link">
+    <visual>
+      <geometry>
+        <sphere radius="0.001"/> <!-- Small visual marker -->
+      </geometry>
+      <material name="dummy_color">
+        <color rgba="0 0 1 0.8"/> <!-- Blue with transparency -->
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001"/> <!-- Very light -->
+      <inertia ixx="0.000001" ixy="0" ixz="0" iyy="0.000001" iyz="0" izz="0.000001"/>
+    </inertial>
+    </link>
+
+    <joint name="palm_lower_to_dummy" type="fixed">
+    <parent link="base_link"/>
+    <child link="wrist_link"/>
+    <origin xyz="0.075 -0.01 0" rpy="-1.57079 -1.57079 1.57079"/> <!-- 5cm forward, 3cm up -->
+  </joint>
+  
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0308345297996861 -0.00809956167493678 0.0015477928529805"
+        rpy="0 0 0" />
+      <mass
+        value="0.0480540547053542" />
+      <inertia
+        ixx="1.9010890037697E-05"
+        ixy="-1.70688655753039E-06"
+        ixz="9.0782658369474E-07"
+        iyy="3.55875197801698E-05"
+        iyz="-4.70280187400863E-07"
+        izz="2.41293843794E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="oymotion_hand_left/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="oymotion_hand_left/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="ff_proximal_link">
+    <inertial>
+      <origin
+        xyz="-0.00963446712148575 0.000258637939434186 -0.0049246372000177"
+        rpy="0 0 0" />
+      <mass
+        value="0.00267211497657395" />
+      <inertia
+        ixx="9.27728291369513E-08"
+        ixy="8.73056191609397E-09"
+        ixz="-4.02520338826631E-08"
+        iyy="2.39659286522166E-07"
+        iyz="2.68153699726847E-09"
+        izz="2.32508346362125E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="oymotion_hand_left/meshes/ff_proximal_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="oymotion_hand_left/meshes/ff_proximal_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ff_proximal_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0377556660538394 -0.0111460376101036 0.0295864263353789"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="ff_proximal_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.23"
+      upper="0.34"
+      effort="50"
+      velocity="1" />
+  </joint>
+  <link
+    name="ff_distal_link">
+    <inertial>
+      <origin
+        xyz="-0.0140884312018295 -0.000597258962120869 -0.018861915395086"
+        rpy="0 0 0" />
+      <mass
+        value="0.00414300987155096" />
+      <inertia
+        ixx="3.84841777283199E-07"
+        ixy="-6.16867059488045E-09"
+        ixz="-2.50098758482993E-07"
+        iyy="5.74279223999935E-07"
+        iyz="-6.2992476955541E-09"
+        izz="2.65185081110658E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="oymotion_hand_left/meshes/ff_distal_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="oymotion_hand_left/meshes/ff_distal_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ff_distal_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0339437906468489 0.00180926366576984 -0.0116078285559355"
+      rpy="0 0 0" />
+    <parent
+      link="ff_proximal_link" />
+    <child
+      link="ff_distal_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.23"
+      upper="0.34"
+      effort="50"
+      velocity="1" />
+      
+    <mimic joint="ff_proximal_joint" multiplier="1.0" offset="0"/>
+  </joint>
+
+  <link name="ff_tip">
+    <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+  </link>
+  <joint name="ff_tip_joint" type="fixed">
+    <parent link="ff_distal_link"/>
+    <child link="ff_tip"/>
+    <origin rpy="0 0 0" xyz="-0.023 -0.002 -0.041"/>
+  </joint>
+  
+  <link
+    name="mf_proximal_link">
+    <inertial>
+      <origin
+        xyz="-0.00167149048639512 0.000194556674696821 -0.00169257519528261"
+        rpy="0 0 0" />
+      <mass
+        value="0.00114470417931708" />
+      <inertia
+        ixx="2.90497685454867E-08"
+        ixy="9.3527913516097E-10"
+        ixz="-1.97300972906725E-08"
+        iyy="9.96217733184251E-08"
+        iyz="2.61818226665419E-10"
+        izz="7.90403064692974E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="oymotion_hand_left/meshes/mf_proximal_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="oymotion_hand_left/meshes/mf_proximal_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mf_proximal_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0410314404503972 -0.0154540567129448 0.00939064039356894"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="mf_proximal_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.23"
+      upper="0.34"
+      effort="50"
+      velocity="1" />
+  </joint>
+  <link
+    name="mf_distal_link">
+    <inertial>
+      <origin
+        xyz="-0.0143394068420105 0.000304305790825023 -0.0186787572939514"
+        rpy="0 0 0" />
+      <mass
+        value="0.00414298576704423" />
+      <inertia
+        ixx="3.77814307268413E-07"
+        ixy="2.60569559606519E-09"
+        ixz="-2.51789431992803E-07"
+        iyy="5.74279089019359E-07"
+        iyz="3.33934285820328E-09"
+        izz="2.72203128474342E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="oymotion_hand_left/meshes/mf_distal_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="oymotion_hand_left/meshes/mf_distal_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mf_distal_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0382891866777801 0.000507072878368063 -0.0146728724788626"
+      rpy="0 0 0" />
+    <parent
+      link="mf_proximal_link" />
+    <child
+      link="mf_distal_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.23"
+      upper="0.34"
+      effort="50"
+      velocity="1" />
+      
+    <mimic joint="mf_proximal_joint" multiplier="1.0" offset="0"/>
+  </joint>
+
+  <link name="mf_tip">
+    <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+  </link>
+  <joint name="mf_tip_joint" type="fixed">
+    <parent link="mf_distal_link"/>
+    <child link="mf_tip"/>
+    <origin rpy="0 0 0" xyz="-0.023 0 -0.041"/>
+  </joint>
+
+
+  <link
+    name="rf_proximal_link">
+    <inertial>
+      <origin
+        xyz="-0.00943741401196795 -0.000644744035393472 -0.00524060093939338"
+        rpy="0 0 0" />
+      <mass
+        value="0.00267214493296488" />
+      <inertia
+        ixx="9.54904649179154E-08"
+        ixy="-8.19583519414169E-09"
+        ixz="-4.29712976409595E-08"
+        iyy="2.39688687823504E-07"
+        iyz="-2.43177543054939E-09"
+        izz="2.29768173161991E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="oymotion_hand_left/meshes/rf_proximal_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="oymotion_hand_left/meshes/rf_proximal_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rf_proximal_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0383008504588008 -0.0147040752297879 -0.0104506200605121"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rf_proximal_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.23"
+      upper="0.34"
+      effort="50"
+      velocity="1" />
+  </joint>
+  <link
+    name="rf_distal_link">
+    <inertial>
+      <origin
+        xyz="-0.0127687034884625 -0.000835042221077447 -0.0197635735521369"
+        rpy="0 0 0" />
+      <mass
+        value="0.00414214846225857" />
+      <inertia
+        ixx="4.17679068396988E-07"
+        ixy="-8.83957481306755E-09"
+        ixz="-2.39631898277239E-07"
+        iyy="5.73559042310164E-07"
+        iyz="-1.35500262451852E-08"
+        izz="2.32558007747657E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="oymotion_hand_left/meshes/rf_distal_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="oymotion_hand_left/meshes/rf_distal_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rf_distal_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0335896805349915 -0.00189937762198306 -0.0125825978441605"
+      rpy="0 0 0" />
+    <parent
+      link="rf_proximal_link" />
+    <child
+      link="rf_distal_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.23"
+      upper="0.34"
+      effort="50"
+      velocity="1" />
+      
+    <mimic joint="rf_proximal_joint" multiplier="1.0" offset="0"/>
+  </joint>
+
+
+  <link name="rf_tip">
+    <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+  </link>
+  <joint name="rf_tip_joint" type="fixed">
+    <parent link="rf_distal_link"/>
+    <child link="rf_tip"/>
+    <origin rpy="0 0 0" xyz="-0.020 -0.001 -0.041"/>
+  </joint>
+
+
+  <link
+    name="lf_proximal_link">
+    <inertial>
+      <origin
+        xyz="-0.00774463156090803 -0.000391520683631859 -0.00460373811958649"
+        rpy="0 0 0" />
+      <mass
+        value="0.00246243785649556" />
+      <inertia
+        ixx="8.56186142918777E-08"
+        ixy="-9.7692744183576E-09"
+        ixz="-2.93491216302902E-08"
+        iyy="1.88515793502733E-07"
+        iyz="-2.97208702112331E-09"
+        izz="1.83500959603726E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="oymotion_hand_left/meshes/lf_proximal_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="oymotion_hand_left/meshes/lf_proximal_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lf_proximal_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0345346620516296 -0.012142879486419 -0.030716462904227"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lf_proximal_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.23"
+      upper="0.34"
+      effort="50"
+      velocity="1" />
+  </joint>
+  <link
+    name="lf_distal_link">
+    <inertial>
+      <origin
+        xyz="-0.00835267505065766 0.000162250990134775 -0.0142055013765391"
+        rpy="0 0 0" />
+      <mass
+        value="0.00260962404050252" />
+      <inertia
+        ixx="1.24544438020232E-07"
+        ixy="7.99245723638694E-10"
+        ixz="-5.47285555000922E-08"
+        iyy="1.53354943930051E-07"
+        iyz="-4.28793777345785E-10"
+        izz="7.17881042627888E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="oymotion_hand_left/meshes/lf_distal_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="oymotion_hand_left/meshes/lf_distal_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lf_distal_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0295364571810051 -0.00241739737627786 -0.0118895904451199"
+      rpy="0 0 0" />
+    <parent
+      link="lf_proximal_link" />
+    <child
+      link="lf_distal_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.23"
+      upper="0.34"
+      effort="50"
+      velocity="1" />
+      
+    <mimic joint="lf_proximal_joint" multiplier="1.0" offset="0"/>
+  </joint>
+
+
+  <link name="lf_tip">
+    <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+  </link>
+  <joint name="lf_tip_joint" type="fixed">
+    <parent link="lf_distal_link"/>
+    <child link="lf_tip"/>
+    <origin rpy="0 0 0" xyz="-0.011 0 -0.03"/>
+  </joint>
+
+
+  <link
+    name="th_link_1">
+    <inertial>
+      <origin
+        xyz="0.00232360486010616 0.00205600810227908 -0.00458288577479005"
+        rpy="0 0 0" />
+      <mass
+        value="0.00211540939170053" />
+      <inertia
+        ixx="1.71275738984385E-07"
+        ixy="8.59043473834107E-09"
+        ixz="1.32759018763032E-08"
+        iyy="1.71622096947695E-07"
+        iyz="-5.89460527055198E-08"
+        izz="1.45480644487152E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="oymotion_hand_left/meshes/th_proximal_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="oymotion_hand_left/meshes/th_proximal_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="th_joint_1"
+    type="revolute">
+    <origin
+      xyz="0.029051 0.014491 0.018757"
+      rpy="-3.1286 -0.058183 1.3516" />
+    <parent
+      link="base_link" />
+    <child
+      link="th_link_1" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-0.34"
+      upper="1.571"
+      effort="50"
+      velocity="1" />
+  </joint>
+  <link
+    name="th_link_2">
+    <inertial>
+      <origin
+        xyz="-0.00921900354675514 -0.00665054100552057 0.00228229214444071"
+        rpy="0 0 0" />
+      <mass
+        value="0.00598358596709542" />
+      <inertia
+        ixx="4.48908265596018E-07"
+        ixy="9.52753843491872E-12"
+        ixz="4.43053630396737E-07"
+        iyy="2.08842678737291E-06"
+        iyz="5.7152098933948E-11"
+        izz="1.7796545959983E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="oymotion_hand_left/meshes/th_intermediate_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="oymotion_hand_left/meshes/th_intermediate_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="th_joint_2"
+    type="revolute">
+    <origin
+      xyz="0.0111 -0.016708 -0.025628"
+      rpy="3.0805 0.013542 1.57" />
+    <parent
+      link="th_link_1" />
+    <child
+      link="th_link_2" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0.0"
+      upper="0.34"
+      effort="50"
+      velocity="1" />
+  </joint>
+  <link
+    name="th_link_3">
+    <inertial>
+      <origin
+        xyz="-0.00836120961598791 0.000119298676046674 0.00784328798984963"
+        rpy="0 0 0" />
+      <mass
+        value="0.00497788278857858" />
+      <inertia
+        ixx="1.99360778898536E-07"
+        ixy="5.89396815914426E-12"
+        ixz="5.81642002141592E-08"
+        iyy="2.35127455589732E-07"
+        iyz="-1.70689676405655E-12"
+        izz="2.67798228394676E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="oymotion_hand_left/meshes/th_distal_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="oymotion_hand_left/meshes/th_distal_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="th_joint_3"
+    type="revolute">
+    <origin
+      xyz="-0.0411917266208989 -0.00679344772831358 0.00763478691200919"
+      rpy="0 0 0" />
+    <parent
+      link="th_link_2" />
+    <child
+      link="th_link_3" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0.0"
+      upper="0.34"
+      effort="50"
+      velocity="1" />
+    <mimic joint="th_joint_2" multiplier="1.0" offset="0"/>
+  </joint>
+
+  <link name="thumb_tip">
+    <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+  </link>
+  <joint name="thumb_tip_joint" type="fixed">
+    <parent link="th_link_3"/>
+    <child link="thumb_tip"/>
+    <origin rpy="0 0 0" xyz="-0.023 0 0.005"/>
+  </joint>
+</robot>

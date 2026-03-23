@@ -1,0 +1,1716 @@
+{
+    "Ability": {
+        "right": {
+            "thumb_q1": {
+                "index": 1,
+                "min": -2.09,
+                "max": 0.0,
+                "scale": -1.0,
+                "offset": 0.0
+            },
+            "thumb_q2": {
+                "index": 2,
+                "min": 0.0,
+                "max": 2.09,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "index_q1": {
+                "index": 7,
+                "min": 0.0,
+                "max": 2.09,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "index_q2": {
+                "index": 8,
+                "min": 0.0,
+                "max": 2.66,
+                "scale": 1.0,
+                "offset": 0.72349796
+            },
+            "middle_q1": {
+                "index": 12,
+                "min": 0.0,
+                "max": 2.09,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "middle_q2": {
+                "index": 13,
+                "min": 0.0,
+                "max": 2.66,
+                "scale": 1.0,
+                "offset": 0.72349796
+            },
+            "ring_q1": {
+                "index": 17,
+                "min": 0.0,
+                "max": 2.09,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "ring_q2": {
+                "index": 18,
+                "min": 0.0,
+                "max": 2.66,
+                "scale": 1.0,
+                "offset": 0.72349796
+            },
+            "pinky_q1": {
+                "index": 22,
+                "min": 0.0,
+                "max": 2.09,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "pinky_q2": {
+                "index": 23,
+                "min": 0.0,
+                "max": 2.66,
+                "scale": 1.0,
+                "offset": 0.72349796
+            }
+        },
+        "left": {
+            "thumb_q1": {
+                "index": 1,
+                "min": -2.09,
+                "max": 0.0,
+                "scale": -1.0,
+                "offset": 0.0
+            },
+            "thumb_q2": {
+                "index": 2,
+                "min": 0.0,
+                "max": 2.09,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "index_q1": {
+                "index": 7,
+                "min": 0.0,
+                "max": 2.09,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "index_q2": {
+                "index": 8,
+                "min": 0.0,
+                "max": 2.66,
+                "scale": 1.0,
+                "offset": -0.72349796
+            },
+            "middle_q1": {
+                "index": 12,
+                "min": 0.0,
+                "max": 2.09,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "middle_q2": {
+                "index": 13,
+                "min": 0.0,
+                "max": 2.66,
+                "scale": 1.0,
+                "offset": -0.72349796
+            },
+            "ring_q1": {
+                "index": 17,
+                "min": 0.0,
+                "max": 2.09,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "ring_q2": {
+                "index": 18,
+                "min": 0.0,
+                "max": 2.66,
+                "scale": 1.0,
+                "offset": -0.72349796
+            },
+            "pinky_q1": {
+                "index": 22,
+                "min": 0.0,
+                "max": 2.09,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "pinky_q2": {
+                "index": 23,
+                "min": 0.0,
+                "max": 2.66,
+                "scale": 1.0,
+                "offset": -0.72349796
+            }
+        }
+    },
+    "Allegro": {
+        "right": {
+            "joint_0.0": {
+                "index": 5,
+                "min": -0.47,
+                "max": 0.47,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "joint_1.0": {
+                "index": 7,
+                "min": -0.20,
+                "max": 1.61,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "joint_2.0": {
+                "index": 8,
+                "min": -0.17,
+                "max": 1.71,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "joint_3.0": {
+                "index": 9,
+                "min": -0.23,
+                "max": 1.62,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "joint_4.0": {
+                "index": 10,
+                "min": -0.47,
+                "max": 0.47,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "joint_5.0": {
+                "index": 12,
+                "min": -0.20,
+                "max": 1.61,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "joint_6.0": {
+                "index": 13,
+                "min": -0.17,
+                "max": 1.71,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "joint_7.0": {
+                "index": 14,
+                "min": -0.23,
+                "max": 1.62,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "joint_8.0": {
+                "index": 15,
+                "min": -0.47,
+                "max": 0.47,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "joint_9.0": {
+                "index": 17,
+                "min": -0.20,
+                "max": 1.61,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "joint_10.0": {
+                "index": 18,
+                "min": -0.17,
+                "max": 1.71,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "joint_11.0": {
+                "index": 19,
+                "min": -0.23,
+                "max": 1.62,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "joint_12.0": {
+                "index": 1,
+                "min": 0.26,
+                "max": 1.40,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "joint_13.0": {
+                "index": 0,
+                "min": -0.10,
+                "max": 1.16,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "joint_14.0": {
+                "index": 2,
+                "min": -0.19,
+                "max": 1.64,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "joint_15.0": {
+                "index": 3,
+                "min": -0.16,
+                "max": 1.72,
+                "scale": 1.0,
+                "offset": 0.0
+            }
+        },
+        "left": {
+            "joint_0.0": {
+                "index": 5,
+                "min": -0.47,
+                "max": 0.47,
+                "scale": -1.0,
+                "offset": 0.0
+            },
+            "joint_1.0": {
+                "index": 7,
+                "min": -0.20,
+                "max": 1.61,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "joint_2.0": {
+                "index": 8,
+                "min": -0.17,
+                "max": 1.71,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "joint_3.0": {
+                "index": 9,
+                "min": -0.23,
+                "max": 1.62,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "joint_4.0": {
+                "index": 10,
+                "min": -0.47,
+                "max": 0.47,
+                "scale": -1.0,
+                "offset": 0.0
+            },
+            "joint_5.0": {
+                "index": 12,
+                "min": -0.20,
+                "max": 1.61,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "joint_6.0": {
+                "index": 13,
+                "min": -0.17,
+                "max": 1.71,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "joint_7.0": {
+                "index": 14,
+                "min": -0.23,
+                "max": 1.62,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "joint_8.0": {
+                "index": 15,
+                "min": -0.47,
+                "max": 0.47,
+                "scale": -1.0,
+                "offset": 0.0
+            },
+            "joint_9.0": {
+                "index": 17,
+                "min": -0.20,
+                "max": 1.61,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "joint_10.0": {
+                "index": 18,
+                "min": -0.17,
+                "max": 1.71,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "joint_11.0": {
+                "index": 19,
+                "min": -0.23,
+                "max": 1.62,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "joint_12.0": {
+                "index": 1,
+                "min": 0.26,
+                "max": 1.40,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "joint_13.0": {
+                "index": 0,
+                "min": -0.10,
+                "max": 1.16,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "joint_14.0": {
+                "index": 2,
+                "min": -0.19,
+                "max": 1.64,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "joint_15.0": {
+                "index": 3,
+                "min": -0.16,
+                "max": 1.72,
+                "scale": 1.0,
+                "offset": 0.0
+            }
+        }
+    },
+    "Inspire": {
+        "right": {
+            "thumb_proximal_yaw_joint": {
+                "index": 1,
+                "min": 0.0,
+                "max": 1.31,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "thumb_proximal_pitch_joint": {
+                "index": 2,
+                "min": 0.0,
+                "max": 0.60,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "thumb_intermediate_joint": {
+                "index": 3,
+                "min": 0.0,
+                "max": 0.80,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "thumb_distal_joint": {
+                "index": 4,
+                "min": 0.0,
+                "max": 0.40,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "index_proximal_joint": {
+                "index": 7,
+                "min": 0.0,
+                "max": 1.47,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "index_intermediate_joint": {
+                "index": 8,
+                "min": -0.05,
+                "max": 1.56,
+                "scale": 1.0,
+                "offset": 0.04545
+            },
+            "middle_proximal_joint": {
+                "index": 12,
+                "min": 0.0,
+                "max": 1.47,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "middle_intermediate_joint": {
+                "index": 13,
+                "min": -0.05,
+                "max": 1.56,
+                "scale": 1.0,
+                "offset": 0.04545
+            },
+            "ring_proximal_joint": {
+                "index": 17,
+                "min": 0.0,
+                "max": 1.47,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "ring_intermediate_joint": {
+                "index": 18,
+                "min": -0.05,
+                "max": 1.56,
+                "scale": 1.0,
+                "offset": 0.04545
+            },
+            "pinky_proximal_joint": {
+                "index": 22,
+                "min": 0.0,
+                "max": 1.47,
+                "scale": 1.0,
+                "offset": 0.0           
+            },
+            "pinky_intermediate_joint": {
+                "index": 23,
+                "min": -0.05,
+                "max": 1.56,
+                "scale": 1.0,
+                "offset": 0.04545
+            }
+        },
+        "left": {
+            "thumb_proximal_yaw_joint": {
+                "index": 1,
+                "min": 0.0,
+                "max": 1.31,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "thumb_proximal_pitch_joint": {
+                "index": 2,
+                "min": 0.0,
+                "max": 0.60,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "thumb_intermediate_joint": {
+                "index": 3,
+                "min": 0.0,
+                "max": 0.80,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "thumb_distal_joint": {
+                "index": 4,
+                "min": 0.0,
+                "max": 0.40,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "index_proximal_joint": {
+                "index": 7,
+                "min": 0.0,
+                "max": 1.47,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "index_intermediate_joint": {
+                "index": 8,
+                "min": -0.05,
+                "max": 1.56,
+                "scale": 1.0,
+                "offset": 0.04545
+            },
+            "middle_proximal_joint": {
+                "index": 12,
+                "min": 0.0,
+                "max": 1.47,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "middle_intermediate_joint": {
+                "index": 13,
+                "min": -0.05,
+                "max": 1.56,
+                "scale": 1.0,
+                "offset": 0.04545
+            },
+            "ring_proximal_joint": {
+                "index": 17,
+                "min": 0.0,
+                "max": 1.47,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "ring_intermediate_joint": {
+                "index": 18,
+                "min": -0.05,
+                "max": 1.56,
+                "scale": 1.0,
+                "offset": 0.04545
+            },
+            "pinky_proximal_joint": {
+                "index": 22,
+                "min": 0.0,
+                "max": 1.47,
+                "scale": 1.0,
+                "offset": 0.0           
+            },
+            "pinky_intermediate_joint": {
+                "index": 23,
+                "min": -0.05,
+                "max": 1.56,
+                "scale": 1.0,
+                "offset": 0.04545
+            }
+        }
+    },
+    "Leap": {
+        "right": {
+            "0": {
+                "index": 6,
+                "min": -1.05,
+                "max": 1.05,
+                "scale": -1.0,
+                "offset": 0.0
+            },
+            "1": {
+                "index": 7,
+                "min": -0.31,
+                "max": 2.23,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "2": {
+                "index": 8,
+                "min": -0.51,
+                "max": 1.89,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "3": {
+                "index": 9,
+                "min": -0.37,
+                "max": 2.04,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "4": {
+                "index": 11,
+                "min": -1.05,
+                "max": 1.05,
+                "scale": -1.0,
+                "offset": 0.0
+            },
+            "5": {
+                "index": 12,
+                "min": -0.31,
+                "max": 2.23,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "6": {
+                "index": 13,
+                "min": -0.51,
+                "max": 1.89,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "7": {
+                "index": 14,
+                "min": -0.37,
+                "max": 2.04,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "8": {
+                "index": 16,
+                "min": -1.05,
+                "max": 1.05,
+                "scale": -1.0,
+                "offset": 0.0
+            },
+            "9": {
+                "index": 17,
+                "min": -0.31,
+                "max": 2.23,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "10": {
+                "index": 18,
+                "min": -0.51,
+                "max": 1.89,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "11": {
+                "index": 19,
+                "min": -0.37,
+                "max": 2.04,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "12": {
+                "index": 1,
+                "min": -0.35,
+                "max": 2.09,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "13": {
+                "index": 0,
+                "min": -0.47,
+                "max": 2.44,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "14": {
+                "index": 2,
+                "min": -1.20,
+                "max": 1.90,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "15": {
+                "index": 3,
+                "min": -1.34,
+                "max": 1.88,
+                "scale": 1.0,
+                "offset": 0.0
+            }
+        },
+        "left": {
+            "0": {
+                "index": 6,
+                "min": -1.05,
+                "max": 1.05,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "1": {
+                "index": 7,
+                "min": -0.31,
+                "max": 2.23,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "2": {
+                "index": 8,
+                "min": -0.51,
+                "max": 1.89,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "3": {
+                "index": 9,
+                "min": -0.37,
+                "max": 2.04,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "4": {
+                "index": 11,
+                "min": -1.05,
+                "max": 1.05,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "5": {
+                "index": 12,
+                "min": -0.31,
+                "max": 2.23,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "6": {
+                "index": 13,
+                "min": -0.51,
+                "max": 1.89,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "7": {
+                "index": 14,
+                "min": -0.37,
+                "max": 2.04,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "8": {
+                "index": 16,
+                "min": -1.05,
+                "max": 1.05,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "9": {
+                "index": 17,
+                "min": -0.31,
+                "max": 2.23,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "10": {
+                "index": 18,
+                "min": -0.51,
+                "max": 1.89,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "11": {
+                "index": 19,
+                "min": -0.37,
+                "max": 2.04,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "12": {
+                "index": 1,
+                "min": -0.35,
+                "max": 2.09,
+                "scale": -1.0,
+                "offset": 1.74
+            },
+            "13": {
+                "index": 0,
+                "min": -0.47,
+                "max": 2.44,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "14": {
+                "index": 2,
+                "min": -1.20,
+                "max": 1.90,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "15": {
+                "index": 3,
+                "min": -1.34,
+                "max": 1.88,
+                "scale": 1.0,
+                "offset": 0.0
+            }
+        }
+    },
+    "Oymotion": {
+        "right": {
+            "ff_proximal_joint": {
+                "index": 7,
+                "min": -1.23,
+                "max": 0.34,
+                "scale": -1.0,
+                "offset": 0.34
+            },
+            "ff_distal_joint": {
+                "index": 8,
+                "min": -1.23,
+                "max": 0.34,
+                "scale": -1.0,
+                "offset": 0.34
+            },
+            "mf_proximal_joint": {
+                "index": 12,
+                "min": -1.23,
+                "max": 0.34,
+                "scale": -1.0,
+                "offset": 0.34
+            },
+            "mf_distal_joint": {
+                "index": 13,
+                "min": -1.23,
+                "max": 0.34,
+                "scale": -1.0,
+                "offset": 0.34
+            },
+            "rf_proximal_joint": {
+                "index": 17,
+                "min": -1.23,
+                "max": 0.34,
+                "scale": -1.0,
+                "offset": 0.34
+            },
+            "rf_distal_joint": {
+                "index": 18,
+                "min": -1.23,
+                "max": 0.34,
+                "scale": -1.0,
+                "offset": 0.34
+            },
+            "lf_proximal_joint": {
+                "index": 22,
+                "min": -1.23,
+                "max": 0.34,
+                "scale": -1.0,
+                "offset": 0.34
+            },
+            "lf_distal_joint": {
+                "index": 23,
+                "min": -1.23,
+                "max": 0.34,
+                "scale": -1.0,
+                "offset": 0.34
+            },
+            "th_joint_1": {
+                "index": 1,
+                "min": -0.34,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "th_joint_2": {
+                "index": 2,
+                "min": 0.0,
+                "max": 0.34,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "th_joint_3": {
+                "index": 3,
+                "min": 0.0,
+                "max": 0.34,
+                "scale": 1.0,
+                "offset": 0.0
+            }
+        },
+        "left": {
+            "ff_proximal_joint": {
+                "index": 7,
+                "min": -1.23,
+                "max": 0.34,
+                "scale": -1.0,
+                "offset": 0.34
+            },
+            "ff_distal_joint": {
+                "index": 8,
+                "min": -1.23,
+                "max": 0.34,
+                "scale": -1.0,
+                "offset": 0.34
+            },
+            "mf_proximal_joint": {
+                "index": 12,
+                "min": -1.23,
+                "max": 0.34,
+                "scale": -1.0,
+                "offset": 0.34
+            },
+            "mf_distal_joint": {
+                "index": 13,
+                "min": -1.23,
+                "max": 0.34,
+                "scale": -1.0,
+                "offset": 0.34
+            },
+            "rf_proximal_joint": {
+                "index": 17,
+                "min": -1.23,
+                "max": 0.34,
+                "scale": -1.0,
+                "offset": 0.34
+            },
+            "rf_distal_joint": {
+                "index": 18,
+                "min": -1.23,
+                "max": 0.34,
+                "scale": -1.0,
+                "offset": 0.34
+            },
+            "lf_proximal_joint": {
+                "index": 22,
+                "min": -1.23,
+                "max": 0.34,
+                "scale": -1.0,
+                "offset": 0.34
+            },
+            "lf_distal_joint": {
+                "index": 23,
+                "min": -1.23,
+                "max": 0.34,
+                "scale": -1.0,
+                "offset": 0.34
+            },
+            "th_joint_1": {
+                "index": 1,
+                "min": -0.34,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "th_joint_2": {
+                "index": 2,
+                "min": 0.0,
+                "max": 0.34,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "th_joint_3": {
+                "index": 3,
+                "min": 0.0,
+                "max": 0.34,
+                "scale": 1.0,
+                "offset": 0.0
+            }
+        }
+    },
+    "Shadow": {
+        "right": {
+            "FFJ4": {
+                "index": 6,
+                "min": -0.35,
+                "max": 0.35,
+                "scale": -1.0,
+                "offset": 0.0
+            },
+            "FFJ3": {
+                "index": 7,
+                "min": -0.26,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "FFJ2": {
+                "index": 8,
+                "min": 0.0,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "FFJ1": {
+                "index": 9,
+                "min": 0.0,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "MFJ4": {
+                "index": 11,
+                "min": -0.35,
+                "max": 0.35,
+                "scale": -1.0,
+                "offset": 0.0
+            },
+            "MFJ3": {
+                "index": 12,
+                "min": -0.26,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "MFJ2": {
+                "index": 13,
+                "min": 0.0,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "MFJ1": {
+                "index": 14,
+                "min": 0.0,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "RFJ4": {
+                "index": 16,
+                "min": -0.35,
+                "max": 0.35,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "RFJ3": {
+                "index": 17,
+                "min": -0.26,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "RFJ2": {
+                "index": 18,
+                "min": 0.0,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "RFJ1": {
+                "index": 19,
+                "min": 0.0,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "LFJ5": {
+                "index": 25,
+                "min": 0.00,
+                "max": 0.79,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "LFJ4": {
+                "index": 21,
+                "min": -0.35,
+                "max": 0.35,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "LFJ3": {
+                "index": 22,
+                "min": -0.26,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "LFJ2": {
+                "index": 23,
+                "min": 0.0,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "LFJ1": {
+                "index": 24,
+                "min": 0.0,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "THJ5": {
+                "index": 0,
+                "min": -1.05,
+                "max": 1.05,
+                "scale": -1.0,
+                "offset": 0.52
+            },
+            "THJ4": {
+                "index": 1,
+                "min": 0.0,
+                "max": 1.22,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "THJ3": {
+                "index": 26,
+                "min": -0.21,
+                "max": 0.21,
+                "scale": -1.0,
+                "offset": 0.0
+            },
+            "THJ2": {
+                "index": 3,
+                "min": -0.70,
+                "max": 0.70,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "THJ1": {
+                "index": 4,
+                "min": -0.26,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            }
+        },
+        "left": {
+            "FFJ4": {
+                "index": 6,
+                "min": -0.35,
+                "max": 0.35,
+                "scale": -1.0,
+                "offset": 0.0
+            },
+            "FFJ3": {
+                "index": 7,
+                "min": -0.26,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "FFJ2": {
+                "index": 8,
+                "min": 0.0,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "FFJ1": {
+                "index": 9,
+                "min": 0.0,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "MFJ4": {
+                "index": 11,
+                "min": -0.35,
+                "max": 0.35,
+                "scale": -1.0,
+                "offset": 0.0
+            },
+            "MFJ3": {
+                "index": 12,
+                "min": -0.26,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "MFJ2": {
+                "index": 13,
+                "min": 0.0,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "MFJ1": {
+                "index": 14,
+                "min": 0.0,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "RFJ4": {
+                "index": 16,
+                "min": -0.35,
+                "max": 0.35,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "RFJ3": {
+                "index": 17,
+                "min": -0.26,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "RFJ2": {
+                "index": 18,
+                "min": 0.0,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "RFJ1": {
+                "index": 19,
+                "min": 0.0,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "LFJ5": {
+                "index": 25,
+                "min": 0.00,
+                "max": 0.79,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "LFJ4": {
+                "index": 21,
+                "min": -0.35,
+                "max": 0.35,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "LFJ3": {
+                "index": 22,
+                "min": -0.26,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "LFJ2": {
+                "index": 23,
+                "min": 0.0,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "LFJ1": {
+                "index": 24,
+                "min": 0.0,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "THJ5": {
+                "index": 0,
+                "min": -1.05,
+                "max": 1.05,
+                "scale": -1.0,
+                "offset": 0.52
+            },
+            "THJ4": {
+                "index": 1,
+                "min": 0.0,
+                "max": 1.22,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "THJ3": {
+                "index": 26,
+                "min": -0.21,
+                "max": 0.21,
+                "scale": -1.0,
+                "offset": 0.0
+            },
+            "THJ2": {
+                "index": 3,
+                "min": -0.70,
+                "max": 0.70,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "THJ1": {
+                "index": 4,
+                "min": -0.26,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            }
+        }
+    },
+    "Wuji": {
+        "right": {
+            "F1J1": {
+                "index": 1,
+                "min": -0.04,
+                "max": 1.65,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F1J2": {
+                "index": 2,
+                "min": -0.17,
+                "max": 0.93,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F1J3": {
+                "index": 3,
+                "min": 0.0,
+                "max": 1.63,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F1J4": {
+                "index": 4,
+                "min": 0.0,
+                "max": 1.63,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F2J1": {
+                "index": 7,
+                "min": -1.64,
+                "max": 0.0,
+                "scale": -1.0,
+                "offset": 0.0
+            },
+            "F2J2": {
+                "index": 6,
+                "min": -0.49,
+                "max": 0.49,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F2J3": {
+                "index": 8,
+                "min": 0.0,
+                "max": 1.63,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F2J4": {
+                "index": 9,
+                "min": 0.0,
+                "max": 1.63,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F3J1": {
+                "index": 12,
+                "min": -1.64,
+                "max": 0.0,
+                "scale": -1.0,
+                "offset": 0.0
+            },
+            "F3J2": {
+                "index": 11,
+                "min": -0.49,
+                "max": 0.49,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F3J3": {
+                "index": 13,
+                "min": 0.0,
+                "max": 1.63,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F3J4": {
+                "index": 14,
+                "min": 0.0,
+                "max": 1.63,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F4J1": {
+                "index": 17,
+                "min": -1.64,
+                "max": 0.0,
+                "scale": -1.0,
+                "offset": 0.0
+            },
+            "F4J2": {
+                "index": 16,
+                "min": -0.49,
+                "max": 0.49,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F4J3": {
+                "index": 18,
+                "min": 0.0,
+                "max": 1.63,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F4J4": {
+                "index": 19,
+                "min": 0.0,
+                "max": 1.63,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F5J1": {
+                "index": 22,
+                "min": -1.64,
+                "max": 0.0,
+                "scale": -1.0,
+                "offset": 0.0
+            },
+            "F5J2": {
+                "index": 21,
+                "min": -0.49,
+                "max": 0.49,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F5J3": {
+                "index": 23,
+                "min": 0.0,
+                "max": 1.63,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F5J4": {
+                "index": 24,
+                "min": 0.0,
+                "max": 1.63,
+                "scale": 1.0,
+                "offset": 0.0
+            }
+        },
+        "left": {
+            "F1J1": {
+                "index": 1,
+                "min": -0.04,
+                "max": 1.65,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F1J2": {
+                "index": 2,
+                "min": -0.17,
+                "max": 0.93,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F1J3": {
+                "index": 3,
+                "min": 0.0,
+                "max": 1.63,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F1J4": {
+                "index": 4,
+                "min": 0.0,
+                "max": 1.63,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F2J1": {
+                "index": 7,
+                "min": -1.64,
+                "max": 0.0,
+                "scale": -1.0,
+                "offset": 0.0
+            },
+            "F2J2": {
+                "index": 6,
+                "min": -0.49,
+                "max": 0.49,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F2J3": {
+                "index": 8,
+                "min": 0.0,
+                "max": 1.63,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F2J4": {
+                "index": 9,
+                "min": 0.0,
+                "max": 1.63,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F3J1": {
+                "index": 12,
+                "min": -1.64,
+                "max": 0.0,
+                "scale": -1.0,
+                "offset": 0.0
+            },
+            "F3J2": {
+                "index": 11,
+                "min": -0.49,
+                "max": 0.49,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F3J3": {
+                "index": 13,
+                "min": 0.0,
+                "max": 1.63,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F3J4": {
+                "index": 14,
+                "min": 0.0,
+                "max": 1.63,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F4J1": {
+                "index": 17,
+                "min": -1.64,
+                "max": 0.0,
+                "scale": -1.0,
+                "offset": 0.0
+            },
+            "F4J2": {
+                "index": 16,
+                "min": -0.49,
+                "max": 0.49,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F4J3": {
+                "index": 18,
+                "min": 0.0,
+                "max": 1.63,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F4J4": {
+                "index": 19,
+                "min": 0.0,
+                "max": 1.63,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F5J1": {
+                "index": 22,
+                "min": -1.64,
+                "max": 0.0,
+                "scale": -1.0,
+                "offset": 0.0
+            },
+            "F5J2": {
+                "index": 21,
+                "min": -0.49,
+                "max": 0.49,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F5J3": {
+                "index": 23,
+                "min": 0.0,
+                "max": 1.63,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "F5J4": {
+                "index": 24,
+                "min": 0.0,
+                "max": 1.63,
+                "scale": 1.0,
+                "offset": 0.0
+            }
+        }
+    },
+    "Xhand": {
+        "right": {
+            "thumb_bend_joint": {
+                "index": 1,
+                "min": 0.0,
+                "max": 1.83,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "thumb_rota_joint1": {
+                "index": 2,
+                "min": -1.05,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "thumb_rota_joint2": {
+                "index": 3,
+                "min": -0.17,
+                "max": 1.83,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "index_bend_joint": {
+                "index": 6,
+                "min": -0.17,
+                "max": 0.17,
+                "scale": -1.0,
+                "offset": 0.0
+            },
+            "index_joint1": {
+                "index": 7,
+                "min": 0.0,
+                "max": 1.92,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "index_joint2": {
+                "index": 8,
+                "min": 0.0,
+                "max": 1.92,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "mid_joint1": {
+                "index": 12,
+                "min": 0.0,
+                "max": 1.92,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "mid_joint2": {
+                "index": 13,
+                "min": 0.0,
+                "max": 1.92,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "ring_joint1": {
+                "index": 17,
+                "min": 0.0,
+                "max": 1.92,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "ring_joint2": {
+                "index": 18,
+                "min": 0.0,
+                "max": 1.92,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "pinky_joint1": {
+                "index": 22,
+                "min": 0.0,
+                "max": 1.92,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "pinky_joint2": {
+                "index": 23,
+                "min": 0.0,
+                "max": 1.92,
+                "scale": 1.0,
+                "offset": 0.0
+            }
+        },
+        "left": {
+            "thumb_bend_joint": {
+                "index": 1,
+                "min": 0.0,
+                "max": 1.83,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "thumb_rota_joint1": {
+                "index": 2,
+                "min": -1.05,
+                "max": 1.57,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "thumb_rota_joint2": {
+                "index": 3,
+                "min": -0.17,
+                "max": 1.83,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "index_bend_joint": {
+                "index": 6,
+                "min": -0.17,
+                "max": 0.17,
+                "scale": -1.0,
+                "offset": 0.0
+            },
+            "index_joint1": {
+                "index": 7,
+                "min": 0.0,
+                "max": 1.92,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "index_joint2": {
+                "index": 8,
+                "min": 0.0,
+                "max": 1.92,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "mid_joint1": {
+                "index": 12,
+                "min": 0.0,
+                "max": 1.92,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "mid_joint2": {
+                "index": 13,
+                "min": 0.0,
+                "max": 1.92,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "ring_joint1": {
+                "index": 17,
+                "min": 0.0,
+                "max": 1.92,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "ring_joint2": {
+                "index": 18,
+                "min": 0.0,
+                "max": 1.92,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "pinky_joint1": {
+                "index": 22,
+                "min": 0.0,
+                "max": 1.92,
+                "scale": 1.0,
+                "offset": 0.0
+            },
+            "pinky_joint2": {
+                "index": 23,
+                "min": 0.0,
+                "max": 1.92,
+                "scale": 1.0,
+                "offset": 0.0
+            }
+        }
+    }
+}

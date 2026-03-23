@@ -1,0 +1,9 @@
+
+    <!-- Inverse transform for wrist_link -> panda_link8 -->
+    <joint name="wrist_to_panda8" type="fixed">
+        <origin xyz="-0.037824 -0.002260 0.030558" 
+                rpy="-3.140033 -0.002824 -0.480005"/>
+        <parent link="wrist_link"/>
+        <child link="panda_link8"/>
+    </joint>
+    

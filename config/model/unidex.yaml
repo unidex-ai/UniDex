@@ -1,0 +1,88 @@
+defaults:
+  - _self_
+  - pointcloud_encoder: uni3d_l
+_target_: src.unidex.unidex.PointCloudUniDexTrain
+
+cond_steps: 1
+horizon_steps: 30
+action_dim: 82
+proprio_dim: 82
+max_seq_len: 540  # fixed 512 for pointcloud + max 28 for text
+tokenizer_padding: max_length # instead of truncating to longest
+max_pointcloud_text_tokens: ${model.max_seq_len}
+num_inference_steps: 10
+final_action_clip_value: 100.0
+pcd_pos_embed: False
+# Fixed
+pcd_token_index: 257152
+vocab_size: 257216
+pad_token_id: 0
+time_hidden_size: 256 # only applicable if using adaptive
+time_max_period: 100.0
+action_expert_rope_theta: 100.0   # since action/proprio seq_len is pretty small
+action_expert_adaptive_mode:
+pretrained_model_path: google/paligemma-3b-pt-224
+tokenizer_path: google/paligemma-3b-pt-224
+# If you encounter gated repo issue, you may need to manually download the paligemma-3b-pt-224 from Huggingface and use the following local path instead
+# ~/.cache/huggingface/hub/models--google--paligemma-3b-pt-224
+
+quantize: False
+lora: False
+lora_r: 32
+lora_dropout: 0.0
+
+mixture:
+  vlm:   # gemma
+    hidden_size: 2048
+    intermediate_size: 16384
+    use_final_norm: False
+    cache: True
+    use_quantize: ${model.quantize}
+    use_lora: ${model.lora}
+    adaptive_mode:  # not applicable for gemma
+    rope_theta: 10000.0  # 10000 in gemma
+  proprio:
+    hidden_size: 1024
+    intermediate_size: 4096
+    use_final_norm: True  # technically no, but sharing weights with action anyway
+    cache: True
+    use_quantize: False
+    use_lora: False
+    adaptive_mode: ${model.action_expert_adaptive_mode}
+    rope_theta: ${model.action_expert_rope_theta}
+  action:
+    hidden_size: 1024
+    intermediate_size: 4096
+    use_final_norm: True
+    cache: False
+    use_quantize: False
+    use_lora: False
+    adaptive_mode: ${model.action_expert_adaptive_mode}
+    rope_theta: ${model.action_expert_rope_theta}
+
+projector:
+  _target_: src.openmodel.modules.PaliGemmaMultiModalProjector
+  use_quantize: ${model.quantize}
+  use_lora: ${model.lora}
+  config:
+    hidden_size: ${model.pointcloud_encoder.pc_feat_dim}
+    projection_dim: 2048
+
+joint:
+  _target_: src.openmodel.joint_model.JointModel
+  config:
+    action_expert_adaptive_mode: ${model.action_expert_adaptive_mode}
+    time_hidden_size: ${model.time_hidden_size}
+    mixture: ${model.mixture}
+    lora:
+      r: ${model.lora_r}
+      dropout: ${model.lora_dropout}
+    #
+    num_hidden_layers: 18
+    num_attention_heads: 8
+    num_key_value_heads: 1
+    head_dim: 256
+    rms_norm_eps: 1e-6
+    attention_bias: False
+    attention_dropout: 0.0
+    pad_token_id: ${model.pad_token_id}

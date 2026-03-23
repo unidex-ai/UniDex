@@ -1,0 +1,136 @@
+<mujoco model="psi-G0-Lv3">
+  <compiler angle="radian" autolimits="true"/>
+  <statistic meansize="0.0320961" extent="0.221755" center="-0.0124404 -0.0124003 0.0019564"/>
+
+  <default>
+    <default class="finger">
+      <joint damping="0.005"/>
+    </default>
+    <default class="thumb">
+      <joint damping="0.01"/>
+    </default>
+  </default>
+
+  <asset>
+    <mesh name="base_link" file="base_link.STL"/>
+    <mesh name="ff_proximal_link" file="ff_proximal_link.STL"/>
+    <mesh name="ff_distal_link" file="ff_distal_link.STL"/>
+    <mesh name="mf_proximal_link" file="mf_proximal_link.STL"/>
+    <mesh name="mf_distal_link" file="mf_distal_link.STL"/>
+    <mesh name="rf_proximal_link" file="rf_proximal_link.STL"/>
+    <mesh name="rf_distal_link" file="rf_distal_link.STL"/>
+    <mesh name="lf_proximal_link" file="lf_proximal_link.STL"/>
+    <mesh name="lf_distal_link" file="lf_distal_link.STL"/>
+    <mesh name="th_proximal_link" file="th_proximal_link.STL"/>
+    <mesh name="th_intermediate_link" file="th_intermediate_link.STL"/>
+    <mesh name="th_distal_link" file="th_distal_link.STL"/>
+  </asset>
+
+  <worldbody>
+    <body name="base_link" gravcomp="1">
+      <geom type="mesh" rgba="0.776471 0.756863 0.737255 1" mesh="base_link"/>
+    </body>
+    <body name="ff_proximal_link" pos="-0.0377557 -0.011146 0.0295864" quat="0.707107 0.707107 0 0">
+      <inertial pos="-0.00963447 0.000258638 -0.00492464" quat="0.0597578 0.608998 0.00959715 0.790859" mass="0.00267211" diaginertia="2.4331e-07 2.4015e-07 8.14807e-08"/>
+      <joint name="ff_proximal_joint" pos="0 0 0" axis="0 1 0" class="finger" range="-1.23 0.34"/>
+      <geom type="mesh" rgba="1 1 1 1" mesh="ff_proximal_link"/>
+      <body name="ff_distal_link" pos="-0.0339438 0.00180926 -0.0116078">
+        <inertial pos="-0.0140884 -0.000597259 -0.0188619" quat="0.943188 -0.027698 0.326755 -0.0534748" mass="0.00414301" diaginertia="5.82281e-07 5.74318e-07 6.77065e-08"/>
+        <joint name="ff_distal_joint" pos="0 0 0" axis="0 1 0" class="finger" range="-1.23 0.34"/>
+        <geom type="mesh" rgba="1 1 1 1" mesh="ff_distal_link"/>
+      </body>
+    </body>
+    <body name="mf_proximal_link" pos="-0.0410314 -0.0154541 0.00939064" quat="0.707107 0.707107 0 0">
+      <inertial pos="-0.00167149 0.000194557 -0.00169258" quat="0.57997 0.412621 0.407178 0.57235" mass="0.0011447" diaginertia="9.96342e-08 8.58888e-08 2.21889e-08"/>
+      <joint name="mf_proximal_joint" pos="0 0 0" axis="0 1 0" class="finger" range="-1.23 0.34"/>
+      <geom type="mesh" rgba="1 1 1 1" mesh="mf_proximal_link"/>
+      <body name="mf_distal_link" pos="-0.0382892 0.000507073 -0.0146729">
+        <inertial pos="-0.0143394 0.000304306 -0.0186788" quat="0.942387 0.0022116 0.334459 -0.00626561" mass="0.00414299" diaginertia="5.82277e-07 5.74314e-07 6.77062e-08"/>
+        <joint name="mf_distal_joint" pos="0 0 0" axis="0 1 0" class="finger" range="-1.23 0.34"/>
+        <geom type="mesh" rgba="1 1 1 1" mesh="mf_distal_link"/>
+      </body>
+    </body>
+    <body name="rf_proximal_link" pos="-0.0383009 -0.0147041 -0.0104506" quat="0.707107 0.707107 0 0">
+      <inertial pos="-0.00943741 -0.000644744 -0.0052406" quat="-0.0221545 0.599568 0.0173306 0.79983" mass="0.00267214" diaginertia="2.42343e-07 2.40153e-07 8.24515e-08"/>
+      <joint name="rf_proximal_joint" pos="0 0 0" axis="0 1 0" class="finger" range="-1.23 0.34"/>
+      <geom type="mesh" rgba="1 1 1 1" mesh="rf_proximal_link"/>
+      <body name="rf_distal_link" pos="-0.0335897 -0.00189938 -0.0125826">
+        <inertial pos="-0.0127687 -0.000835042 -0.0197636" quat="0.954683 -0.00832247 0.296271 0.0271145" mass="0.00414215" diaginertia="5.82023e-07 5.74059e-07 6.77144e-08"/>
+        <joint name="rf_distal_joint" pos="0 0 0" axis="0 1 0" class="finger" range="-1.23 0.34"/>
+        <geom type="mesh" rgba="1 1 1 1" mesh="rf_distal_link"/>
+      </body>
+    </body>
+    <body name="lf_proximal_link" pos="-0.0345347 -0.0121429 -0.0307165" quat="0.707107 0.707107 0 0">
+      <inertial pos="-0.00774463 -0.000391521 -0.00460374" quat="-0.073415 0.605839 0.00116771 0.792192" mass="0.00246244" diaginertia="1.91656e-07 1.89417e-07 7.65623e-08"/>
+      <joint name="lf_proximal_joint" pos="0 0 0" axis="0 1 0" class="finger" range="-1.23 0.34"/>
+      <geom type="mesh" rgba="1 1 1 1" mesh="lf_proximal_link"/>
+      <body name="lf_distal_link" pos="-0.0295365 -0.0024174 -0.0118896">
+        <inertial pos="-0.00835268 0.000162251 -0.0142055" quat="0.957978 0.0219877 0.275883 0.075381" mass="0.00260962" diaginertia="1.59063e-07 1.53212e-07 3.74125e-08"/>
+        <joint name="lf_distal_joint" pos="0 0 0" axis="0 1 0" class="finger" range="-1.23 0.34"/>
+        <geom type="mesh" rgba="1 1 1 1" mesh="lf_distal_link"/>
+      </body>
+    </body>
+    <body name="th_proximal_link" pos="0.029051 0.014491 0.018757" quat="0.0232607 -0.779742 -0.625391 -0.0186319">
+      <inertial pos="0.0023236 0.00205601 -0.00458289" quat="0.627752 -0.297172 0.170142 0.699048" mass="0.00211541" diaginertia="2.18986e-07 1.74461e-07 9.49314e-08"/>
+      <joint name="th_proximal_joint" pos="0 0 0" axis="0 -1 0" class="thumb" range="-0.34 1.571"/>
+      <geom type="mesh" rgba="1 1 1 1" mesh="th_proximal_link"/>
+      <body name="th_intermediate_link" pos="0.0111 -0.016708 -0.025628" quat="0.0263879 0.706896 0.706626 0.0167996">
+        <inertial pos="-0.009219 -0.00665054 0.00228229" quat="0.421379 0.567878 0.567693 0.42152" mass="0.00598359" diaginertia="2.08843e-06 1.91367e-06 3.14895e-07"/>
+        <joint name="th_intermediate_joint" pos="0 0 0" axis="0 -1 0" class="thumb" range="0 0.34"/>
+        <geom type="mesh" rgba="1 1 1 1" mesh="th_intermediate_link"/>
+        <body name="th_distal_link" pos="-0.0411917 -0.00679345 0.00763479">
+          <inertial pos="-0.00836121 0.000119299 0.00784329" quat="4.28604e-05 0.865001 -1.22001e-05 0.501771" mass="0.00497788" diaginertia="3.01063e-07 2.35127e-07 1.66096e-07"/>
+          <joint name="th_distal_joint" pos="0 0 0" axis="0 -1 0" class="thumb" range="0 0.34"/>
+          <geom type="mesh" rgba="1 1 1 1" mesh="th_distal_link"/>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+
+  <contact>
+    <exclude body1="base_link" body2="ff_proximal_link"/>
+    <exclude body1="base_link" body2="rf_proximal_link"/>
+    <exclude body1="base_link" body2="lf_proximal_link"/>
+    <exclude body1="base_link" body2="mf_proximal_link"/>
+    <exclude body1="base_link" body2="th_proximal_link"/>
+    <exclude body1="ff_proximal_link" body2="ff_distal_link"/>
+    <exclude body1="rf_proximal_link" body2="rf_distal_link"/>
+    <exclude body1="lf_proximal_link" body2="lf_distal_link"/>
+    <exclude body1="mf_proximal_link" body2="mf_distal_link"/>
+    <exclude body1="th_proximal_link" body2="th_intermediate_link"/>
+    <exclude body1="th_intermediate_link" body2="th_distal_link"/>
+  </contact>
+
+  <tendon>
+    <fixed name="ff_tendon" limited="true" range="-0.001 0.001">
+        <joint joint="ff_proximal_joint" coef="100"/>
+        <joint joint="ff_distal_joint" coef="-100" />
+    </fixed>
+    <fixed name="mf_tendon" limited="true" range="-0.001 0.001">
+        <joint joint="mf_proximal_joint" coef="100"/>
+        <joint joint="mf_distal_joint" coef="-100" />
+    </fixed>
+    <fixed name="rf_tendon" limited="true" range="-0.001 0.001">
+        <joint joint="rf_proximal_joint" coef="100"/>
+        <joint joint="rf_distal_joint" coef="-100" />
+    </fixed>
+    <fixed name="lf_tendon" limited="true" range="-0.001 0.001">
+        <joint joint="lf_proximal_joint" coef="100"/>
+        <joint joint="lf_distal_joint" coef="-100" />
+    </fixed>
+    <fixed name="thumb_tendon_1" limited="true" range="-0.001 0.001">
+        <joint joint="th_intermediate_joint" coef="-100"/>
+        <joint joint="th_distal_joint" coef="100"/>
+    </fixed>
+  </tendon>
+
+  <actuator>
+    <position name="index_tendon_a" kp="10" joint="ff_proximal_joint" ctrlrange="-1.23 0.34"/>
+    <position name="middle_tendon_a" kp="10" joint="mf_proximal_joint" ctrlrange="-1.23 0.34"/>
+    <position name="ring_tendon_a" kp="10" joint="rf_proximal_joint" ctrlrange="-1.23 0.34"/>
+    <position name="pinky_tendon_a" kp="10" joint="lf_proximal_joint" ctrlrange="-1.23 0.34"/>
+    <position name="thumb_tendon_b" kp="10" joint="th_intermediate_joint" ctrlrange="0.0 0.34"/>
+    <position name="th1" joint="th_proximal_joint" kp="10"  ctrlrange="-0.34 1.571"/>
+  </actuator>
+
+</mujoco>

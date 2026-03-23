@@ -1,0 +1,25 @@
+{
+    "base_joint": "base_joint",
+    "tips": [
+        "thumb_tip",
+        "ff_tip",
+        "mf_tip",
+        "lf_tip",
+        "rf_tip"
+    ],
+    "poses": [
+        "wrist_link",
+        "thumb_tip",
+        "ff_tip",
+        "mf_tip",
+        "lf_tip",
+        "rf_tip"
+    ],
+    "mimic_relations": {
+        "ff_distal_joint": ["ff_proximal_joint", 1.0, 0],
+        "mf_distal_joint": ["mf_proximal_joint", 1.0, 0],
+        "lf_distal_joint": ["lf_proximal_joint", 1.0, 0],
+        "rf_distal_joint": ["rf_proximal_joint", 1.0, 0],
+        "th_joint_3": ["th_joint_2", 1.0, 0]
+    }
+}

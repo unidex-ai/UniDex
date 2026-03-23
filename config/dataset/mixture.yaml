@@ -1,0 +1,8 @@
+defaults:
+  - _self_
+  - /dataset@H2o: H2o           
+  - /dataset@HOI4D: HOI4D       
+  - /dataset@Hot3D: Hot3D 
+  - /dataset@Taco: Taco
+
+_target_: src.dataset.mixture.MixtureDataset

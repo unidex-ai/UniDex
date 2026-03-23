@@ -1,0 +1,19 @@
+{
+    "base_joint": "base_joint",
+    "tips": [
+        "thumb_rota_tip",
+        "index_rota_tip",
+        "mid_tip",
+        "ring_tip",
+        "pinky_tip"
+    ],
+    "poses": [
+        "hand_link",
+        "thumb_rota_tip",
+        "index_rota_tip",
+        "mid_tip",
+        "ring_tip",
+        "pinky_tip"
+    ],
+    "mimic_relations": {}
+}

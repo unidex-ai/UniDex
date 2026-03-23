@@ -1,0 +1,21 @@
+{
+    "base_joint": "base_joint",
+    "tips": ["thumb_tip",
+            "index_tip",
+            "middle_tip",
+            "ring_tip",
+            "pinky_tip"],
+
+    "poses": ["base",
+            "thumb_tip",
+            "index_tip",
+            "middle_tip",
+            "ring_tip",
+            "pinky_tip"],
+    "mimic_relations": {
+        "index_q2": ["index_q1", 1.05851325, 0.72349796],
+        "middle_q2": ["middle_q1", 1.05851325, 0.72349796],
+        "ring_q2": ["ring_q1", 1.05851325, 0.72349796],
+        "pinky_q2": ["pinky_q1", 1.05851325, 0.72349796]
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "base_joint": "base_to_palm",
+    "tips": ["link_15.0_tip",
+            "link_11.0_tip",
+            "link_7.0_tip",
+            "link_3.0_tip"
+            ],
+
+    "poses": ["wrist_link",
+            "link_15.0_tip",
+            "link_11.0_tip",
+            "link_7.0_tip",
+            "link_3.0_tip" ],
+    "mimic_relations": {}
+}
