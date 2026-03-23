@@ -9,24 +9,11 @@
   <strong>UniDex: A Robot Foundation Suite for Universal Dexterous Hand Control from Egocentric Human Videos</strong>
 </p>
 
-<p align="center">
-  <a href="assets/UniDex_Arxiv.pdf">
-    <img src="assets/badges/arxiv.svg" alt="arXiv badge">
-  </a>
-  <a href="assets/UniDex_Arxiv.pdf">
-    <img src="assets/badges/paper.svg" alt="Paper badge">
-  </a>
-  <a href="https://unidex-ai.github.io/">
-    <img src="assets/badges/project-page.svg" alt="Project Page badge">
-  </a>
-  <a href="https://huggingface.co/UniDex-ai/UniDex">
-    <img src="assets/badges/model.svg" alt="Model badge">
-  </a>
-</p>
+[![arXiv](https://img.shields.io/badge/arXiv-2603.03233-df2a2a.svg)](https://unidex-ai.github.io/assets/UniDex_Arxiv.pdf)
+[![Static Badge](https://img.shields.io/badge/Project-Page-a)](https://unidex-ai.github.io/)
+[![Model](https://img.shields.io/badge/Hugging%20Face-Model-yellow)](https://huggingface.co/UniDex-ai/UniDex)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 
-<p align="center">
-  <a href="assets/new_teaser.pdf">Teaser PDF</a>
-</p>
 
 UniDex provides the codebase for dataset preparation, hand retargeting, pre-training, and real-world post-training for universal dexterous hand control from egocentric human videos.
 
