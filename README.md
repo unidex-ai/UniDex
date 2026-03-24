@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://unidex-ai.github.io/assets/UniDex_Arxiv.pdf"><img src="https://img.shields.io/badge/arXiv-2603.03233-df2a2a.svg" alt="arXiv"></a>
+  <a href="https://arxiv.org/html/2603.22264"><img src="https://img.shields.io/badge/arXiv-2603.22264-df2a2a.svg" alt="arXiv"></a>
   <a href="https://unidex-ai.github.io/"><img src="https://img.shields.io/badge/Project-Page-a" alt="Project Page"></a>
   <a href="https://huggingface.co/UniDex-ai/UniDex"><img src="https://img.shields.io/badge/Hugging%20Face-Model-yellow" alt="Hugging Face Model"></a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"></a>
