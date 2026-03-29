@@ -8,7 +8,7 @@ Before starting, download datasets annotations from our Hugging Face repository:
 ```bash
 hf download UniDex-ai/UniDex --include dataset_annotations/* --local-dir .
 ```
-(which include some annotations manually labeled by us)
+
 
 ### H2o (2 Hands and Objects)
 
