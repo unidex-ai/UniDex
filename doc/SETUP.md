@@ -32,7 +32,9 @@ git clone https://github.com/facebookresearch/sam2.git
 cd sam2
 pip install -e .
 cd ..
-pip install git+https://github.com/warmshao/WiLoR-mini
+git clone https://github.com/rolpotamias/WiLoR.git
+export PYTHONPATH=$(pwd)/WiLoR:$PYTHONPATH # Add WiLoR to PYTHONPATH since it cannot be installed as a package
+# It is recommended to add the above line to your .bashrc or .zshrc for future use.
 ```
 ## Downloading Models
 
