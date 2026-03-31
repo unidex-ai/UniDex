@@ -264,10 +264,10 @@ Contact [Gu Zhang](www.gu-zhang.com) and [Qicheng Xu](xuqc24@mails.tsinghua.edu.
 If you find UniDex useful, please cite:
 
 ```bibtex
-@inproceedings{zhang2026unidex,
+@article{zhang2026unidex,
   title={UniDex: A Robot Foundation Suite for Universal Dexterous Hand Control from Egocentric Human Videos},
-  author={Zhang, Gu and Xu, Qicheng and Zhang, Haozhe and Ma, Jianhan and He, Long and Bao, Yiming and Ping, Zeyu and Yuan, Zhecheng and Lu, Chenhao and Yuan, Chengbo and Liang, Tianhai and Tian, Xiaoyu and Shao, Maanping and Zhang, Feihong and Ding, Mingyu and Gao, Yang and Zhao, Hao and Zhao, Hang and Xu, Huazhe},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  author={Zhang, Gu and Xu, Qicheng and Zhang, Haozhe and Ma, Jianhan and He, Long and Bao, Yiming and Ping, Zeyu and Yuan, Zhecheng and Lu, Chenhao and Yuan, Chengbo and others},
+  journal={arXiv preprint arXiv:2603.22264},
   year={2026}
 }
 ```
