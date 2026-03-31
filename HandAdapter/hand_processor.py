@@ -244,13 +244,11 @@ class HandProcessor:
             if geom_type != p.GEOM_MESH or fname == b'':
                 continue
             fname = fname.decode('utf-8')
-            if not os.path.isabs(fname):
-                fname = str(Path(urdf_path).parent / fname)
-            if os.path.exists(fname):
-                mesh = _load_mesh(fname, scale)
-                link_name = link_names[link_idx] if 0 <= link_idx < len(link_names) else 'base'
-                T_local = urdf_visual_offsets.get(link_name, np.eye(4))
-                mesh_bank[link_idx] = (mesh, T_local)
+            assert os.path.exists(fname), f"File not found: {fname}"
+            mesh = _load_mesh(fname, scale)
+            link_name = link_names[link_idx] if 0 <= link_idx < len(link_names) else 'base'
+            T_local = urdf_visual_offsets.get(link_name, np.eye(4))
+            mesh_bank[link_idx] = (mesh, T_local)
         
         return {
             'config': config,
