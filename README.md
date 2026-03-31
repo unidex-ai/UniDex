@@ -23,9 +23,7 @@ UniDex provides the codebase for dataset preparation, hand retargeting, pre-trai
 
 - [Overview](#overview)
 - [Setup](#setup)
-- [Dataset Preparation](#dataset-preparation)
-- [Retargeting](#retargeting)
-- [Adding a New Hand](#adding-a-new-hand)
+- [Dataset](#dataset)
 - [Pre-training](#pre-training)
 - [Finetuning](#finetuning)
 - [Checkpoints and Model Assets](#checkpoints-and-model-assets)
@@ -256,15 +254,20 @@ The default finetuning config uses `2` GPUs and loads a pretrained checkpoint fr
 
 We provide UniDex checkpoints and released assets on [Hugging Face](https://huggingface.co/UniDex-ai/UniDex).
 
+## Acknowledgement
+Our code is built upon: [open-pi-zero](https://github.com/allenzren/open-pi-zero) and [Uni3D](https://github.com/baaivision/Uni3D). We thank all these authors for their open sourced code.
+
+Contact [Gu Zhang](www.gu-zhang.com) and [Qicheng Xu](xuqc24@mails.tsinghua.edu.cn) if you have more questions.
+
 ## Citation
 
 If you find UniDex useful, please cite:
 
 ```bibtex
-@inproceedings{zhang2026unidex,
+@article{zhang2026unidex,
   title={UniDex: A Robot Foundation Suite for Universal Dexterous Hand Control from Egocentric Human Videos},
-  author={Zhang, Gu and Xu, Qicheng and Zhang, Haozhe and Ma, Jianhan and He, Long and Bao, Yiming and Ping, Zeyu and Yuan, Zhecheng and Lu, Chenhao and Yuan, Chengbo and Liang, Tianhai and Tian, Xiaoyu and Shao, Maanping and Zhang, Feihong and Ding, Mingyu and Gao, Yang and Zhao, Hao and Zhao, Hang and Xu, Huazhe},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  author={Zhang, Gu and Xu, Qicheng and Zhang, Haozhe and Ma, Jianhan and He, Long and Bao, Yiming and Ping, Zeyu and Yuan, Zhecheng and Lu, Chenhao and Yuan, Chengbo and others},
+  journal={arXiv preprint arXiv:2603.22264},
   year={2026}
 }
 ```
